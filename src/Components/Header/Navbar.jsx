@@ -16,7 +16,11 @@ export default function Navbar() {
             <li>Contacts us</li>
             <li> About us </li>
           </ul>
-          <button className="p-2 bg-green-500 rounded-lg ">Booknow</button>
+          <button className="p-2 bg-green-500 rounded-lg ">
+<Link  to="/book">   BookNow  </Link>
+
+
+          </button>
         </div>
       </nav>
     </header>

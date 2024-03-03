@@ -10,8 +10,9 @@ const CardContext = createContext({
         {
             service: "amit rana",
             img: 'https://images.pexels.com/photos/1583582/pexels-photo-1583582.jpeg?auto=compress&cs=tinysrgb&w=600',
-            backGround: 'bluee',
+            backGround: 'blue',
         }
+        
     ]
 
 });

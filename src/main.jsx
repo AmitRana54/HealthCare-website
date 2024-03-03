@@ -11,13 +11,14 @@ import {
 } from "react-router-dom";
 import Body from "./Components/body/Body";
 import OurServices from "./Components/OurServices/OurServices";
-import Icu from "./Components/OurServices/Icu";
+import BookNow from "./Components/Booknow/BookNow";
 const routes = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<AppLayout />}>
       <Route path="" element={<Body />} />
       <Route path="/services" element={<OurServices />} />
-      <Route path="/icu" element={<Icu/>} />
+      <Route path="/book" element={<BookNow/>}/>
+      
     </Route>
   )
 );
