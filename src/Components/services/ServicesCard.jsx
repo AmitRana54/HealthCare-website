@@ -2,23 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function ServicesCard({
-  name = " Transthepy",
-  image = "this is a Image",
-  bgColor = "orange",
+  name ,
+  image ,
+  bgColor ,
 }) {
+
   return (
     <div
-      className={`h-52 w-[22rem] flex border-${bgColor}-600  border-2 rounded-xl overflow-hidden bg-${bgColor}`}
+      className={`h-52 w-[22rem] flex border-[${bgColor}]-600  border-2 rounded-xl overflow-hidden bg-[${bgColor}]`}
     >
       <div className="  mt-4 h-full w-60 rounded-sm border- flex  flex-col   justify-between">
         <h1
-          className={`text-3xl font-bold underline decoration-2 text-${bgColor} text-pretty  px-9 `}
+          className={`text-2xl font-bold underline decoration-2 text-blue-500 capitalize text-nowrap px-9 `}
         >
           {name}
         </h1>
         <Link
           to="/book"
-          className="mb-12 ml-8  bg- text-green-400 font-bold text-pretty text-lg underline-offset-1"
+          className="mb-12 ml-8  bg- text-green-800 font-bold text-pretty text-lg underline-offset-1"
         >
           Booknow
         </Link>
