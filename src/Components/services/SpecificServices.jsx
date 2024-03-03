@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
-import DetialsAbout from "./DetialsAbout";
 import ServicesContext from "../../../Context/ServicesContext";
 
-function SpecificServices({ imgUrl }) {
-  const { serv } = useContext(ServicesContext);
+function SpecificServices() {
 
   return (
     <>
@@ -14,9 +12,7 @@ function SpecificServices({ imgUrl }) {
           alt=""
         />
       </div>
-      <ServicesContext.Provider value={services}>
-        <DetialsAbout />
-      </ServicesContext.Provider>
+     
     </>
   );
 }

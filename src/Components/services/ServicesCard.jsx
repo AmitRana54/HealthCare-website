@@ -14,7 +14,7 @@ function ServicesCard({
         <h1 className={`text-3xl font-bold underline decoration-2 text-${bgColor} text-pretty  px-9 `}>
           {name}
         </h1>
-       <Link to="/services" className="mb-12 ml-8  bg- text-green-400 font-bold text-pretty text-lg underline-offset-1"
+       <Link to="/icu" className="mb-12 ml-8  bg- text-green-400 font-bold text-pretty text-lg underline-offset-1"
                >
        Booknow
        
