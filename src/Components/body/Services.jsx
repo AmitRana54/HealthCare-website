@@ -3,7 +3,6 @@ import ServicesCard from '../services/ServicesCard'
 import CardContext from '../../../Context/CardContext'
 
 export default function () {
-  const cardDetails = useContext(CardContext)
   const {details }= useContext(CardContext)
   const [card , setCard] = useState(details)
 
