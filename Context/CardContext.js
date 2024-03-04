@@ -7,6 +7,7 @@ const CardContext = createContext({
             service: "icu",
             img: "https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=600",
             backGround: "#6CB3AE",
+            route: "/icu"
         },
         {
             service: "Cinical",

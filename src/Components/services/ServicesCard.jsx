@@ -5,6 +5,7 @@ function ServicesCard({
   name ,
   image ,
   bgColor ,
+  route
 }) {
 
   return (
@@ -15,7 +16,7 @@ function ServicesCard({
         <h1
           className={`text-2xl font-bold underline decoration-2 text-blue-500 capitalize text-nowrap px-9 `}
         >
-          {name}
+         <Link   to={route}   > {name}</Link>
         </h1>
         <Link
           to="/book"

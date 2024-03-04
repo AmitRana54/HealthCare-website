@@ -7,22 +7,12 @@ function ImageCard() {
   const [data, setData] = useState(department);
   const [index, setIndex] = useState(0);
 
-   
-
   useEffect(() => {
-   const timerid =setInterval(() => {
-        setIndex((idx)=>(idx+1)%data.length)
-        
-        
+    const timerid = setInterval(() => {
+      setIndex((idx) => (idx + 1) % data.length);
     }, 3000);
-    return ()=>(
-        clearInterval(timerid)
-
-    )
-  
-   
-  }, [data.length])
-  
+    return () => clearInterval(timerid);
+  }, [data.length]);
 
   return (
     <div className="h-[70vh] w-full ">
