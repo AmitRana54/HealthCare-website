@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import imageContext from "../../../Context/imageContext";
+import imageContext from "../../Context/imageContext"
 
 function ImageCard() {
   const { department } = useContext(imageContext);

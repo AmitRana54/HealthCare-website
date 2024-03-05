@@ -1,13 +1,13 @@
 import React, { useContext, useState } from "react";
 import ServicesCard from "../services/ServicesCard";
-import CardContext from "../../../Context/CardContext";
+import CardContext from "../../Context/CardContext";
 
 export default function () {
   const { details } = useContext(CardContext);
   const [card, setCard] = useState(details);
 
   return (
-    <div className="h-screen w-full ">
+    <div className="h-max-screen w-full ">
       <h1 className="text-center  font-bold text-2xl text-zinc-800">
         Medical Services Offered At Home
       </h1>

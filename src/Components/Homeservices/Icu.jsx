@@ -1,6 +1,6 @@
 import React, { u, useState } from "react";
 import TemplateServices from "./TemplateServices";
-import { useHomeServData } from "../../../Context/HomeservContext";
+import { useHomeServData } from "../../Context/HomeservContext";
 import BookNow from "../Booknow/BookNow";
 
 function Icu() {

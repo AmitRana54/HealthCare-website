@@ -2,7 +2,7 @@ import React from "react";
 
 export default function () {
   return (
-    <footer className="h-[80vh] w-full bg-zinc-600   flex justify-between  rounded-lg">
+    <footer className="h-[70vh] w-full bg-zinc-600   flex justify-between  rounded-lg">
       <div className="about  h-full w-1/3 flex justify-center ">
         <h4 className="text-2xl text-zinc-950">About us</h4>
         <ul>
