@@ -1,7 +1,6 @@
 import React from "react";
 
 function TemplateServices({ imgLink, serviceName, aboutService }) {
-     console.log(aboutService);
   return (
      
     <div className=" h-auto w-full ">

@@ -10,23 +10,23 @@ function ServicesCard({
 
   return (
     <div
-      className={`h-52 w-[22rem] flex border-[${bgColor}]-600  border-2 rounded-xl overflow-hidden bg-[${bgColor}]`}
+      className={`h-52 w-[22rem] flex  rounded-xl overflow-hidden ${bgColor}`}
     >
       <div className="  mt-4 h-full w-60 rounded-sm border- flex  flex-col   justify-between">
         <h1
-          className={`text-2xl font-bold underline decoration-2 text-blue-500 capitalize text-nowrap px-9 `}
+          className={`text-2xl font-bold underline decoration-2 text-blue-600 capitalize text-nowrap px-9 `}
         >
          <Link   to={route}   > {name}</Link>
         </h1>
         <Link
           to="/book"
-          className="mb-12 ml-8  bg- text-green-800 font-bold text-pretty text-lg underline-offset-1"
+          className="mb-12 ml-8   text-blue-600 font-bold text-pretty text-lg underline-offset-1      hover:underline hover:text-blue-700"
         >
           Booknow
         </Link>
       </div>
-      <div className="imgdiv relative h-full  flex items-center  ">
-        <img className=" w-32 rounded-xl mr-8" src={image} alt="" />
+      <div className="imgdiv relative h-full  flex items-center justify-center ">
+        <img className=" w-36 rounded-xl mr-12 object-cover     " src={image} alt="" />
       </div>
     </div>
   );

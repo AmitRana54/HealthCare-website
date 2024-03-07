@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function BookNow() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState(null);
+  const [num, setNum] = useState("");
   const [last, setLast] = useState("");
   const [message, setMessage] = useState("");
   const [data, setData] = useState([]);
@@ -21,6 +21,7 @@ function BookNow() {
   }
   const handleSumbit = (e) => {
     e?.preventDefault();
+    console.log(name);
     const valid = validate(num, email);
     if (valid) {
       const obj = {

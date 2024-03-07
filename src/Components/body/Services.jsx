@@ -7,7 +7,7 @@ export default function () {
   const [card, setCard] = useState(details);
 
   return (
-    <div className="h-max-screen w-full ">
+    <div className="h-max-screen w-full mb-10 ">
       <h1 className="text-center  font-bold text-2xl text-zinc-800">
         Medical Services Offered At Home
       </h1>

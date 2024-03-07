@@ -15,10 +15,10 @@ function ImageCard() {
   }, [data.length]);
 
   return (
-    <div className="h-[70vh] w-full ">
+    <div className="h-[90vh] w-full ">
       <div className="imgdiv">
         <img
-          className="rounded-lg shadow-lg object-cover w-[60rem] h-72  border-4 border-spacing-8 border-x-red-600 m-auto  duration-150 "
+          className="rounded-lg shadow-lg object-cover w-[60rem] h-96 border-4 border-spacing-8 m-auto  duration-150 "
           src={data[index].depImg}
           alt="img not found"
         />
