@@ -9,24 +9,26 @@ function ServicesCard({
 }) {
 
   return (
-    <div
-      className={`h-52 w-[22rem] flex  rounded-xl overflow-hidden ${bgColor}`}
-    >
-      <div className="  mt-4 h-full w-60 rounded-sm border- flex  flex-col   justify-between">
-        <h1
-          className={`text-2xl font-bold underline decoration-2 text-blue-600 capitalize text-nowrap px-9 `}
-        >
-         <Link   to={route}   > {name}</Link>
+    <div className="w-[300px] rounded-md border mt-7">
+      <img
+        src={image}
+        alt="services image"
+        className="h-[200px] w-full rounded-t-md object-cover"
+      />
+      <div className="p-4">
+        <h1 className="inline-flex items-center text-lg font-semibold">
+         {name} 
         </h1>
-        <Link
-          to="/book"
-          className="mb-12 ml-8   text-blue-600 font-bold text-pretty text-lg underline-offset-1      hover:underline hover:text-blue-700"
+        <p className="mt-3 text-sm text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+        </p>
+        
+        <button
+          type="button"
+          className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-          Booknow
-        </Link>
-      </div>
-      <div className="imgdiv relative h-full  flex items-center justify-center ">
-        <img className=" w-36 rounded-xl mr-12 object-cover     " src={image} alt="" />
+         <Link    to={route}     > BookNow     </Link>
+        </button>
       </div>
     </div>
   );
