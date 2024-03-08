@@ -12,7 +12,7 @@ function Information() {
 <button className='p-2 mt-10 bg-green-600 rounded-lg'><Link to='/book'>BOOKNOW</Link></button>
         </div>
         <div className="imglogo h-full w-[40vw]  flex items-start justify-center  mr-16">
-            <img className='h-[30rem] w-[30rem] rounded-full  border-green-500 border-8 mr-16' src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png" alt="" />
+            <img className='h-[30rem] w-[30rem] rounded-full  border-yellow-500 border-8 mr-16' src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png" alt="" />
         </div>
 
 
