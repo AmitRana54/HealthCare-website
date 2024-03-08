@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 function BookNow() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
