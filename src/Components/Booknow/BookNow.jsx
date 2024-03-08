@@ -31,13 +31,6 @@ function BookNow() {
         phoneNo: num,
         Message: message,
       };
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Form Submitted Successfully",
-        showConfirmButton: false,
-        timer: 1500
-      });
      
       setData((prev) => [...prev, obj]);
       console.log(data);
