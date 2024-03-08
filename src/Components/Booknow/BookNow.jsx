@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
+import Swal from "sweetalert2";
+
 function BookNow() {
+  const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState("");
+  const [num, setNum] = useState(null);
   const [last, setLast] = useState("");
   const [message, setMessage] = useState("");
   const [data, setData] = useState([]);
@@ -20,7 +24,6 @@ function BookNow() {
   }
   const handleSumbit = (e) => {
     e?.preventDefault();
-    console.log(name);
     const valid = validate(num, email);
     if (valid) {
       const obj = {
@@ -31,6 +34,17 @@ function BookNow() {
         phoneNo: num,
         Message: message,
       };
+      emailjs
+        .sendForm('service_ldpgx1u', 'template_ytrmycc', form.current, {
+          publicKey: 'cfa6tyzN4q_XVZhFO'
+        })
+        .then(() => {
+          console.log('SUCCESS');
+        }),
+        (error) => {
+          console.log('FAILED To Send DATA', error.text);
+        };
+      
       Swal.fire({
         position: "center",
         icon: "success",
@@ -38,7 +52,7 @@ function BookNow() {
         showConfirmButton: false,
         timer: 1500
       });
-     
+
       setData((prev) => [...prev, obj]);
       console.log(data);
       setEmail("");
@@ -51,22 +65,6 @@ function BookNow() {
       setErr(true);
     }
   };
-  if (submit) {
-    return (
-      <>
-        <div className="submit    h-auto w-full flex items-center justify-center mb-10        ">
-          <div className=" h-80 w-60  border-2 border-green-400 flex flex-col justify-center items-center ">
-          <span className="h-20 w-20 rounded-full bg-green-500 text-white font-bold text-xl     flex items-center justify-center ">
-            ok
-          </span>
-          <div className=" text-2xl font-serif font-medium  text-nowrap   flex items-center justify-center     ">
-          sumbmitted
-          </div>
-          </div>
-        </div>
-      </>
-    );
-  }
   return (
     <>
       <div className="heading">
@@ -74,7 +72,7 @@ function BookNow() {
           Book Now
         </h1>
       </div>
-      <form
+      <form ref={form}
         className="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
         onSubmit={handleSumbit}
       >
@@ -88,6 +86,7 @@ function BookNow() {
                 First Name
               </label>
               <input
+                name="from_name"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="firstName"
                 type="text"
@@ -108,6 +107,7 @@ function BookNow() {
                 Last Name
               </label>
               <input
+                name="from_name"
                 className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id="lastName"
                 type="text"
@@ -126,6 +126,7 @@ function BookNow() {
             Email
           </label>
           <input
+            name="from_email"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="email"
             type="email"
@@ -144,6 +145,7 @@ function BookNow() {
             Phone Number
           </label>
           <input
+            name="from_phone"
             required
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="phone"
@@ -162,6 +164,7 @@ function BookNow() {
             Message
           </label>
           <textarea
+            name="message"
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             required
             id="message"
