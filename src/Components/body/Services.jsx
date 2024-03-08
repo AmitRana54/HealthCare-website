@@ -9,13 +9,13 @@ export default function () {
   return (
     <div className="h-max-screen w-full mb-10 ">
       <h1 className="text-center  font-bold text-3xl text-zinc-900">
-        Medical Services Offered At our Hodipital
+        Medical Services Offered At our Hosipital
       </h1>
       <h2 className="text-center text-zinc-500 text-sm ">
         medicrov offers a variety of healthcare services in the comfort of
         ourpatient’s homes including:
       </h2>
-      <div className=" w-[96vw] m-auto mt-5 flex flex-wrap gap-2  ">
+      <div className=" w-[96vw] m-auto mt-5  grid gap-4 grid-cols-4 grid-rows-2 ">
         <CardContext.Provider value={{ details }}>
           {card?.map((items, index) => {
             return (

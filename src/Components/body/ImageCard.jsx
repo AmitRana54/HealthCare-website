@@ -10,7 +10,7 @@ function ImageCard() {
   useEffect(() => {
     const timerid = setInterval(() => {
       setIndex((idx) => (idx + 1) % data.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(timerid);
   }, [data.length]);
 

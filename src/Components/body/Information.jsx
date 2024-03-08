@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 function Information() {
   return (
-    <main className='h-screen w-full flex justify-between'>
+    <main className='h-screen w-full flex justify-between  '>
         <div className="details  h-full w-1/2 py-32  px-10 gap-3 "    > 
             <h1 className='text-3xl font-bold '>Quality Medical Care Delivered</h1>
             <h1     className='text-3xl py-2 font-bold'>  At The Comfort of Your Home</h1>

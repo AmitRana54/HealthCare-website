@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Services  from "../body/Services";
 
 function BookNow() {
   const [name, setName] = useState("");
@@ -48,7 +49,7 @@ function BookNow() {
     return (
       <>
         <div className="submit    h-auto w-full flex items-center justify-center mb-10        ">
-          <div className=" h-80 w-60  border-2 border-green-400 flex flex-col justify-center items-center ">
+          <div className=" h-80 w-60  border-2  flex flex-col justify-center items-center ">
           <span className="h-20 w-20 rounded-full bg-green-500 text-white font-bold text-xl     flex items-center justify-center ">
             ok
           </span>
@@ -57,6 +58,7 @@ function BookNow() {
           </div>
           </div>
         </div>
+        <Services />
       </>
     );
   }

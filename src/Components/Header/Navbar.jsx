@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <header className="w-full  h-32  ">
+    <header className="w-full  h-32  n ">
       <nav className="  m-auto h-full w-[87%]   flex items-center justify-between">
         <div className="logo  w-32 h-full flex items-center justify-center ">
           <Link to="/"> logo deepak </Link>
