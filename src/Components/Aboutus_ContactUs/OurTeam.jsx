@@ -19,9 +19,9 @@ function OurTeam({}) {
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white p-10 max-w-sm mx-auto rounded-lg shadow-md border border-gray-200">
+            <div key={index} className="bg-white p-7 max-w-sm mx-auto rounded-lg shadow-md border border-gray-200">
               <div className="flex justify-center">
-                <img className="w-44 h-44 rounded-full object-cover object-center" src={member.imageUrl} alt={member.name} />
+                <img className="w-96 h-44 rounded-md object-cover object-center" src={member.imageUrl} alt={member.name} />
               </div>
               <div className="mt-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>

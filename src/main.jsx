@@ -12,7 +12,7 @@ import {
 import Body from "./Components/body/Body";
 import OurServices from "./Components/OurServices/OurServices";
 import BookNow from "./Components/Booknow/BookNow";
-import Icu from "./Components/Homeservices/Icu";
+import Icu from './Components/Allservices/Icu'
 import Aboutus from "./Components/Aboutus_ContactUs/Aboutus";
 const routes = createBrowserRouter(
   createRoutesFromElements(

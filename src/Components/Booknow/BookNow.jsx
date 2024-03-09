@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
 // import emailjs from '@emailjs/browser';
-import Swal from "sweetalert2";
+import Services from "../body/Services"
 
 function BookNow() {
   const form = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [num, setNum] = useState(null);
+  const [num, setNum] = useState("");
   const [last, setLast] = useState("");
   const [message, setMessage] = useState("");
   const [data, setData] = useState([]);
@@ -34,13 +34,7 @@ function BookNow() {
         phoneNo: num,
         Message: message,
       };
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Form Submitted Successfully",
-        showConfirmButton: false,
-        timer: 1500
-      });
+     
      
       setData((prev) => [...prev, obj]);
       console.log(data);
@@ -54,6 +48,34 @@ function BookNow() {
       setErr(true);
     }
   };
+  if (submit) {
+    return(
+      <div className="h-auto w-screen flex items-center justify-center flex-col">
+<div className="h-96 w-screen flex items-center justify-center">
+      <div className="max-w-md mx-auto bg-green-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+      <div className="md:flex">
+        <div className="md:flex-shrink-0">
+          <svg className="h-12 w-12 text-green-500 mt-8 ml-8" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M0 0h24v24H0z" stroke="none"/>
+            <path d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <div className="p-8">
+          <div className="uppercase tracking-wide text-sm text-green-500 font-semibold">Success</div>
+          <p className="mt-2 text-lg leading-tight text-gray-800">Form submitted successfully!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900"> 
+    
+    see our other services </h1>
+    <Services/>
+
+    </div>
+    )
+    
+  }
   return (
     <>
       <div className="heading">

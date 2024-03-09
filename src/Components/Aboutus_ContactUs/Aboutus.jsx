@@ -1,5 +1,6 @@
 import React from 'react'
 import OurTeam from './OurTeam'
+import BookNow from '../Booknow/BookNow'
 
 function Aboutus() {
     
@@ -59,6 +60,7 @@ function Aboutus() {
       </div>
     </div>  
     <OurTeam/>
+    <BookNow/>
     </>
   )
 }
