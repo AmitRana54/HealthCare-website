@@ -6,7 +6,7 @@ export default function Navbar() {
     <header className="w-screen  h-32  n ">
       <nav className="  m-auto h-full w-[87%]   flex items-center justify-between">
         <div className="logo  w-32 h-full flex items-center justify-center ">
-          <Link to="/"> logo deepak </Link>
+          <Link to="/"> logoklll deepak </Link>
         </div>
         <div className="flex gap-6  ">
           <ul className=" flex items-center gap-7 text-center font-bold text-xl ">
