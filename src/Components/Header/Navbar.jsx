@@ -19,8 +19,8 @@ export default function Navbar() {
               </Link>
             </li>
 
-            <li>Contacts us</li>
-            <li><Link to='/aboutus'> About us     </Link>  </li>
+            <li><Link to='/ContactUs'> Contact Us    </Link>  </li>
+            <li><Link to='/AboutUs'> About us     </Link>  </li>
           </ul>
           <button className="p-2 bg-green-500 rounded-lg ">
             <Link to="/book"> BookNow </Link>

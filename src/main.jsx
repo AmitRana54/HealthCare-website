@@ -13,6 +13,7 @@ import Body from "./Components/body/Body";
 import OurServices from "./Components/OurServices/OurServices";
 import BookNow from "./Components/Booknow/BookNow";
 import Icu from "./Components/Homeservices/Icu";
+import Contactus from "./Components/Aboutus_ContactUs/Contactus/Contactus";
 import Aboutus from "./Components/Aboutus_ContactUs/Aboutus";
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const routes = createBrowserRouter(
       <Route path="/" element={<Body />} />
       <Route path="/services" element={<OurServices />} />
       <Route path="/book" element={<BookNow/>}/>
+      <Route path="/Contactus" element={<Contactus/>}/>
       <Route path="/icu" element = { <Icu/>} />
       <Route path="/aboutus" element= {<Aboutus/>}/>
       
