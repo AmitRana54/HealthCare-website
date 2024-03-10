@@ -3,7 +3,7 @@ import SliderContext from "../../Context/Slidercontext";
 
 function HomeServices() {
   const { serv } = useContext(SliderContext);
-  const [services, setServices] = useState(serv);
+  const [service, setService] = useState(serv);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -12,24 +12,34 @@ function HomeServices() {
     }, 2000);
     return () => clearInterval(timerid);
   }, [serv.length]);
+  
+    const [isExpanded, setIsExpanded] = useState(false);
+  
+    const toggleExpanded = () => {
+      setIsExpanded(!isExpanded);
+    }
 
   return (
-    <div className="div h-screen w-screen ">
-      <h1  className=" text-center text-pretty capitalize text-3xl text-gray-950 m-10 font-bold"       >Home Services Offered At Our Hospital
-      </h1>
-      <div key={index} className="px-4">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden object-cover object-center">
-          <img
-            src={services[index].image}
-            alt={services[index].title}
-            className="w-full h-64 object-cover"
-          />
-          <div className="p-6">
-            <h3 className="text-xl font-semibold mb-2">
-              {services[index].title}
-            </h3>
-            <p className="text-gray-700">{services[index].description}</p>
-          </div>
+    <div className="md:w-1/2 lg:w-1/3 px-4 mb-8">
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img
+          src={service.image}
+          alt={service.title}
+          className="w-full h-64 object-cover"
+        />
+        <div className="p-6">
+          <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+          <p className={`text-gray-700 ${isExpanded ? '' : 'line-clamp-3'}`}>
+            {service.description}
+          </p>
+          {service.description.length > 30 && (
+            <button
+              onClick={toggleExpanded}
+              className="text-blue-500 font-semibold mt-2 focus:outline-none"
+            >
+              {isExpanded ? 'Read Less' : 'Read More'}
+            </button>
+          )}
         </div>
       </div>
     </div>

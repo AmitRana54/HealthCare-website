@@ -11,7 +11,7 @@ export default function () {
     <h1 className="text-center font-bold text-4xl text-gray-900 mb-6 sm:text-xl sm:text-wrap">
       Medical Services Offered At Our Hospital
     </h1>
-    <h2 className="text-center text-gray-600 text-lg mb-8">
+    <h2 className="text-center text-gray-600 text-lg mb-8 sm:text-lg">
       Medicrov offers a variety of healthcare services in the comfort of our patients’ homes including:
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

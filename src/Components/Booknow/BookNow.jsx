@@ -1,66 +1,73 @@
-import React, { useState, useRef } from "react";
-// import emailjs from '@emailjs/browser';
+import React, {useState} from 'react'
 import Services from "../body/Services"
 
 function BookNow() {
-  const form = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [num, setNum] = useState("");
-  const [last, setLast] = useState("");
-  const [message, setMessage] = useState("");
-  const [data, setData] = useState([]);
-  const [err, setErr] = useState(false);
-  const [submit, setSubmit] = useState(false);
-  function validate(num, email) {
-    const cleanedPhoneNumber = num.replace(/\D/g, "");
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const [errors , setErrors ] = useState({
+    emailErr: false,
+    numErr: false
 
-    if (cleanedPhoneNumber.length !== 10 && emailRegex.test(email)) {
+  })
+  const [submit, setSubmit] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    phoneNumber: '',
+    email: '',
+    services: '',
+    age: '',
+    city: '',
+    date: '',
+  });
+
+  const validate = (num,email)=>{
+    
+    const  regexeNumber = /^\+?(\d{1,3})?[-. ]?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}$/;
+    const regexemail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if( !regexeNumber.test(num)){
+      setErrors({
+        numErr:true,
+        emailErr:false
+      })
+      return false
+
+    }
+    
+    else if(!regexemail.test(email)){
+      setErrors({
+        numErr:false,
+        emailErr:true
+      })
       return false;
     }
-
-    return emailRegex.test(email);
-  }
-  const handleSumbit = (e) => {
-    e?.preventDefault();
-    const valid = validate(num, email);
-    if (valid) {
-      const obj = {
-        id: Date.now(),
-        FirstName: name,
-        LastName: last,
-        Email: email,
-        phoneNo: num,
-        Message: message,
-      };
-
-      // Email Data Send 
-      // emailjs
-      //   .sendForm('service_ldpgx1u', 'Template_ID'.form.current, {
-      //     publicKey: 'cfa6tyzN4q_XVZhFO',
-      //   })
-      //   .then(() => {
-      //     console.log('SUCCESS')
-      //   })
-      //   .then((error) => {
-      //     console.log('FAILED...TO SEND', error.text);
-      //   })
-
-
-      setData((prev) => [...prev, obj]);
-      console.log(data);
-      setEmail("");
-      setNum("");
-      setLast("");
-      setMessage("");
-      setName("");
-      setSubmit(true);
-    } else {
-      setErr(true);
+    else{
+      return true
     }
+
+
+  }
+
+  const handleChange = (e) => {
+    setErrors({
+      emailErr:false,
+      numErr:false
+    })
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
   };
-  if (submit) {
+  const handleSubmit = (e)=>{
+    e?.preventDefault();
+   const valid = validate(formData.phoneNumber,formData.email);
+   if(valid){
+    setSubmit(true)
+   }
+  
+
+
+
+  }
+if (submit) {
     return (
       <div className="h-auto w-screen flex items-center justify-center flex-col">
         <div className="h-96 w-screen flex items-center justify-center">
@@ -88,126 +95,142 @@ function BookNow() {
     )
 
   }
-  return (
-    <>
-      <div className="heading p-16">
-        <h1 className="text-2xl text-center font-bold text-pretty text-green-600  ">
-          Book Now
-        </h1>
-      </div>
-      <form ref={form}
-        className="max-w-md mx-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
-        onSubmit={handleSumbit}
+  return ( <div className="max-w-md mx-auto p-6 rounded-lg border border-gray-300 shadow-md mt-16">
+  <h2 className="text-2xl  mb-4 text-center text-green-800 font-bold">Book Now</h2>
+  <form className="space-y-4" onSubmit={handleSubmit}>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="name">
+        <span className="text-red-500">*</span> Name:
+      </label>
+      <input
+        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+        type="text"
+        id="name"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="phoneNumber">
+        <span className="text-red-500">*</span> Phone Number:
+      </label>
+      <input
+         className={`w-full px-4 py-2 border rounded-md focus:outline-none ${
+          errors.numErr ? 'border-red-500' : 'focus:border-blue-500'
+        }`}
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        value={formData.phoneNumber}
+        onChange={handleChange}
+        required
+        
+      />
+      {errors.numErr && (
+            <p className="text-sm text-red-700 font-serif font-semibold">Enter a valid Phone Number</p>
+          )}
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="email">
+        <span className="text-red-500">*</span> Email:
+      </label>
+      <input
+        className={`w-full px-4 py-2 border rounded-md focus:outline-none ${
+          errors.emailErr ? 'border-red-500' : 'focus:border-blue-500'
+        }`}
+        type="email"
+        id="email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+       {errors.emailErr && (
+            <p className="text-sm text-red-700 font-serif font-semibold">Enter a valid Phone Number</p>
+          )}
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="services">
+        Services:
+      </label>
+      <select
+        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+        id="services"
+        name="services"
+        value={formData.services}
+        onChange={handleChange}
       >
-        <div className="mb-4">
-          <div className="flex justify-between mb-2">
-            <div className="w-1/2 mr-2">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="firstName"
-              >
-                First Name
-              </label>
-              <input
-                name="from_name"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="firstName"
-                type="text"
-                placeholder="Enter your first name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              {err && (
-                <p className="text-red-700 text-sm "> Enter valid Detail</p>
-              )}
-            </div>
-            <div className="w-1/2 ml-2">
-              <label
-                className="block text-gray-700 text-sm font-bold mb-2"
-                htmlFor="lastName"
-              >
-                Last Name
-              </label>
-              <input
-                name="from_name"
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="lastName"
-                type="text"
-                placeholder="Enter your last name"
-                value={last}
-                onChange={(e) => setLast(e.target.value)}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="email"
-          >
-            Email
-          </label>
-          <input
-            name="from_email"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="email"
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => (setEmail(e.target.value), setErr(false))}
-            required
-          />
-          {err && <p className="text-red-700 text-sm ">Enter valid Detail</p>}
-        </div>
-        <div className="mb-4">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="phone"
-          >
-            Phone Number
-          </label>
-          <input
-            name="from_phone"
-            required
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="phone"
-            type="tel"
-            placeholder="Enter your phone number"
-            value={num}
-            onChange={(e) => (setNum(e.target.value), setErr(false))}
-          />
-          {err && <p className="text-red-700 text-sm ">Enter valid Detail</p>}
-        </div>
-        <div className="mb-6">
-          <label
-            className="block text-gray-700 text-sm font-bold mb-2"
-            htmlFor="message"
-          >
-            Message
-          </label>
-          <textarea
-            name="message"
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            required
-            id="message"
-            placeholder="Enter your message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
-        </div>
-        <div className="flex items-center justify-between">
-          <button
-            onClick={handleSumbit}
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </>
-  );
+        <option value="ICU">ICU</option>
+        <option value="Skill Nursing">Skill Nursing</option>
+        <option value="Attendant">Attendant</option>
+        <option value="physiotherapist">physiotherapist</option>
+        <option value="Japa Maid">Japa Maid</option>
+        <option value="Cancer Patient">Cancer Patient</option>
+        <option value="Surgical Bed">Surgical Bed</option>
+        <option value='Suction Machine'>Suction Machine</option>
+       
+      </select>
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="age">
+        Age:
+      </label>
+      <select
+        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+        id="age"
+        name="age"
+        value={formData.age}
+        onChange={handleChange}
+        required
+      >
+        <option value="child">Child</option>
+        <option value='adult'>
+          Adult
+        </option>
+        <option value="senior">Senior</option>
+        {/* Add your age group options here */}
+      </select>
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="city">
+        City:
+      </label>
+      <select
+        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+        id="city"
+        name="city"
+        value={formData.city}
+        onChange={handleChange}
+      >
+        <option value="Sharanpur<">Sharanpur</option>
+        <option value="Rishikesh">Rishikesh</option>
+      </select>
+    </div>
+    <div>
+      <label className="block mb-1 font-serif font-semibold" htmlFor="date">
+        Date:
+      </label>
+      <input
+        className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+        type="date"
+        id="date"
+        name="date"
+        value={formData.date}
+        onChange={handleChange}
+      />
+    </div>
+    <button
+      type="submit"
+      className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+  
+  )
 }
 
-export default BookNow;
+export default BookNow
