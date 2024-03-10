@@ -26,7 +26,7 @@ function ImageCard() {
       </div>
 
       <div className="departName w-full h-auto text-center text-3xl font-bold text-green-600 capitalize tracking-wider leading-4 duration-150">
-        <span className="text-zinc-900 text-3xl mx-7">Department: </span>
+        <span className="text-zinc-900 text-3xl mx-7 sm:text-base sm:text-wrap ">Department: </span>
         {data[index].depName}
       </div>
 

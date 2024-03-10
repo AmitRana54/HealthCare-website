@@ -6,7 +6,7 @@ export default function () {
     <footer className="bg-gray-800 text-white py-8 px-24">
       <div className="container mx-auto flex flex-wrap justify-between ">
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
-          <h3 className="text-3xl font-bold mb-4">Our Team</h3>
+          <h3 className="text-3xl font-bold mb-4 sm:text-left sm:text-2xl">Our Team</h3>
           <ul className="text-orange-500  text-xl">
             <li>Deeapak Singh</li>
             <li>Adarsh Singh</li>
@@ -14,7 +14,7 @@ export default function () {
           </ul>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
-          <h3 className="text-3xl font-bold mb-4">Our Services</h3>
+          <h3 className="text-3xl font-bold mb-4 sm:text-left sm:text-2xl         ">Our Services</h3>
           <ul className="text-orange-500  text-xl   list-disc   ">
             <li>ICU Care</li>
             <li>Skill Nursing</li>
@@ -27,14 +27,14 @@ export default function () {
           </ul>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/4  lg:w-1/3 mb-4">
-          <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
+          <h3 className="text-3xl font-bold mb-4   sm:text-left sm:text-2xl       ">Contact Us</h3>
           <p>123 Health Street</p>
           <p>City, State ZIP</p>
           <p>Email: info@example.com</p>
           <p>Phone: 123-456-7890</p>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-4 flex justify-end">
-          <h3 className="text-lg font-semibold mr-5">Follow Us</h3>
+          <h3 className="text-lg font-semibold mr-5  sm:text-left sm:text-sm   ">Follow Us</h3>
           <div className="flex items-center">
             <a
               href="https://www.facebook.com"
