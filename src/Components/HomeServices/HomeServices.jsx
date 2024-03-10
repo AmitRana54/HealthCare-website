@@ -19,7 +19,7 @@ function HomeServices() {
       <div key={index} className="px-4">
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
           <img
-            src={`/images/${services.image}`}
+            src={services.image}
             alt={services[index].title}
             className="w-full h-64 object-cover"
           />
