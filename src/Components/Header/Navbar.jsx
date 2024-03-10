@@ -33,7 +33,7 @@ export default function Navbar() {
           </button>
         </div>
         <div className="md:hidden flex items-center ">
-          <button className="text-white p-2 focus:outline-none" onClick={toggleMenu}>
+          <button className="text-white justify-between text-right ml-52 p-16 focus:outline-none" onClick={toggleMenu}>
             {isMenuOpen ? (
               <svg
                 className="w-6 h-6"
