@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import TeamContext from '../../Context/OurTeamContext'
 
-function OurTeam() {
+function OurTeam({}) {
+    const {team} = useContext(TeamContext)
+    const [teamMembers,setTeamMeembers] = useState(team)
   return (
     <div className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -16,9 +19,9 @@ function OurTeam() {
 
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white p-6 max-w-sm mx-auto rounded-lg shadow-md border border-gray-200">
+            <div key={index} className="bg-white p-7 max-w-sm mx-auto rounded-lg shadow-md border border-gray-200">
               <div className="flex justify-center">
-                <img className="w-32 h-32 rounded-full object-cover" src={member.imageUrl} alt={member.name} />
+                <img className="w-96 h-44 rounded-md object-cover object-center" src={member.imageUrl} alt={member.name} />
               </div>
               <div className="mt-6 text-center">
                 <h3 className="text-xl font-semibold text-gray-900">{member.name}</h3>

@@ -1,28 +1,75 @@
 import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function () {
   return (
-    <footer className="h-[70vh] w-full bg-zinc-800  flex justify-between  rounded-lg">
-      <div className="about  h-full w-1/3 flex justify-center ">
-        <h4 className="text-3xl text-white">About us</h4>
-        <ul>
-          <li></li>
-        </ul>
-      </div>
-      <div className="servises h-ful w-1/3  flex items-center   flex-col     ">
-        <h4 className="text-3xl text-white">OUR SERVICES</h4>
-        <ul className="text-xl text-yellow-500 gap-2 mt-4 list-disc">
-          <li>ICU Care</li>
-          <li>Skill Nursing</li>
-          <li>Attendant</li>
-          <li>Japa Miad</li>
-          <li>Cancer Patient</li>
-          <li>Surgical Bed</li>
-          <li>Suction Machine</li>
-        </ul>
-      </div>
-      <div className="contacts hi w-1/3        flex justify-center         ">
-        <h4 className="text-3xl text-white">Contact us</h4>
+    <footer className="bg-gray-800 text-white py-8 px-24">
+      <div className="container mx-auto flex flex-wrap justify-between ">
+        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
+          <h3 className="text-3xl font-bold mb-4">Our Team</h3>
+          <ul className="text-orange-500  text-xl">
+            <li>Deeapak Singh</li>
+            <li>Adarsh Singh</li>
+            <li>Ayush Rawat</li>
+          </ul>
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
+          <h3 className="text-3xl font-bold mb-4">Our Services</h3>
+          <ul className="text-orange-500  text-xl   list-disc   ">
+            <li>ICU Care</li>
+            <li>Skill Nursing</li>
+            <li>Attendant</li>
+            <li>Physiotherapist</li>
+            <li>Japa Maid</li>
+            <li>Cancer Patient</li>
+            <li>Surgical Bed</li>
+            <li>Suction Machine</li>
+          </ul>
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/4  lg:w-1/3 mb-4">
+          <h3 className="text-3xl font-bold mb-4">Contact Us</h3>
+          <p>123 Health Street</p>
+          <p>City, State ZIP</p>
+          <p>Email: info@example.com</p>
+          <p>Phone: 123-456-7890</p>
+        </div>
+        <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 mb-4 flex justify-end">
+          <h3 className="text-lg font-semibold mr-5">Follow Us</h3>
+          <div className="flex items-center">
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mr-4 transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition duration-300 ease-in-out transform hover:scale-110"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );

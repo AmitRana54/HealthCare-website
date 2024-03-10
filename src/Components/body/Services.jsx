@@ -7,29 +7,24 @@ export default function () {
   const [card, setCard] = useState(details);
 
   return (
-    <div className="h-max-screen w-full mb-10 ">
-      <h1 className="text-center  font-bold text-3xl text-zinc-900">
-        Medical Services Offered At our Hosipital
-      </h1>
-      <h2 className="text-center text-zinc-500 text-sm ">
-        medicrov offers a variety of healthcare services in the comfort of
-        ourpatient’s homes including:
-      </h2>
-      <div className=" w-[96vw] m-auto mt-5  grid gap-4 grid-cols-4 grid-rows-2 ">
-        <CardContext.Provider value={{ details }}>
-          {card?.map((items, index) => {
-            return (
-              <ServicesCard
-                key={index}
-                name={items.service}
-                image={items.img}
-                bgColor={items.backGround}
-                route={items.route}
-              />
-            );
-          })}
-        </CardContext.Provider>
-      </div>
+    <div className="container mx-auto mt-24 p-10">
+    <h1 className="text-center font-bold text-4xl text-gray-900 mb-6">
+      Medical Services Offered At Our Hospital
+    </h1>
+    <h2 className="text-center text-gray-600 text-lg mb-8">
+      Medicrov offers a variety of healthcare services in the comfort of our patients’ homes including:
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {card?.map((items, index) => (
+        <ServicesCard
+          key={index}
+          name={items.service}
+          image={items.img}
+          bgColor={items.backGround}
+          route={items.route}
+        />
+      ))}
     </div>
+  </div>
   );
 }
