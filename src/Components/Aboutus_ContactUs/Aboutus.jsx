@@ -6,7 +6,7 @@ function Aboutus() {
     
   return (
     <>
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-100  mt-9 p-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className=" sm:text-xl text-indigo-600 font-semibold lg:text-3xl tracking-wide uppercase">About Us</h2>
