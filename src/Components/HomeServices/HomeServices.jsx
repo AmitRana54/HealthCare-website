@@ -1,5 +1,4 @@
 import React, { useContext, useState, useEffect } from "react";
-
 import SliderContext from "../../Context/Slidercontext";
 
 function HomeServices() {
@@ -16,10 +15,12 @@ function HomeServices() {
 
   return (
     <div className="div h-screen w-screen ">
+      <h1  className=" text-center text-pretty capitalize text-3xl text-gray-950 m-10 font-bold"       >Home Services Offered At Our Hospital
+      </h1>
       <div key={index} className="px-4">
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-white rounded-lg shadow-lg overflow-hidden object-cover object-center">
           <img
-            src={services.image}
+            src={services[index].image}
             alt={services[index].title}
             className="w-full h-64 object-cover"
           />
