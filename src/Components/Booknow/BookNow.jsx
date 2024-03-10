@@ -78,7 +78,7 @@ function BookNow() {
   }
   return (
     <>
-      <div className="heading">
+      <div className="heading p-16">
         <h1 className="text-2xl text-center font-bold text-pretty text-green-600  ">
           Book Now
         </h1>
