@@ -33,6 +33,7 @@ function ImageCard() {
       <div className="text-center mt-8">
         <p className="text-xl text-gray-900">
           Welcome to our department! We are committed to providing exceptional healthcare services to our patients.
+          <br />
           Our team consists of highly trained professionals dedicated to your well-being.
         </p>
       </div>
