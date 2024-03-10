@@ -35,7 +35,7 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <button className="p-3 bg-green-500 rounded-lg text-white font-bold ">
+          <button className="p-2 mb-2 bg-green-500 rounded-lg text-white font-bold ">
             <Link to="/book">Book Now</Link>
           </button>
         </div>
