@@ -6,10 +6,15 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        'regal-blue': '#F8EBB9',
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(100%)' },
+        }
       },
-     
+      animation:{
+        slide: 'slide 3s ease-in-out infinite'
+      }
     },
   },
   plugins: [],

@@ -1,0 +1,13 @@
+.animate {
+  animation: silde 2s ease-in-out infinite direction fill-mode;
+  animation: slide 3s linear 1s infinite alternate forwards;
+  background-color: blue;
+}
+@keyframes slide {
+  to {
+    transform: translateX(0%);
+  }
+  from {
+    transform: translateX(100%);
+  }
+}
