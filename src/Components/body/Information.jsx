@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Information() {
   return (
-    <main className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:items-start py-5 px-24">
+    <main className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:items-start py-5 px-10">
       <div className="details w-full lg:w-1/2 py-8 lg:py-32 px-4 lg:px-10 gap-3 text-center lg:text-left">
         <h1 className="text-2xl lg:text-3xl font-bold">Quality Medical Care Delivered</h1>
         <h1 className="text-2xl lg:text-3xl py-2 font-bold">At The Comfort of Your Home</h1>
