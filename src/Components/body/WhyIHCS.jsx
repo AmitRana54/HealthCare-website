@@ -4,7 +4,7 @@ function WhyIHCS() {
   return (
     
      <div className="max-w-7xl mx-auto px-4 py-8">
-      <h1 className="text-center text-3xl mt-7 font-bold mb-5 sm:text-lg sm:text-nowrap sm:mt-4">Indian Health Care Services</h1>
+      <h1 className="text-center text-3xl mt-7 font-bold mb-5 sm:text-xl   sm:mt-4">Indian Health Care Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded-lg p-6">
           <img src="https://medicrov.com/wp-content/uploads/2024/01/Physical-therapy-exercise-bro.svg" alt="" className="mx-auto h-24 w-24 mb-4" />

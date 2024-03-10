@@ -9,8 +9,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10 ">
-      <nav className="container mx-auto h-full flex items-center justify-between pt-5 px-24 ">
+    <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10  ">
+      <nav className="container mx-auto h-full flex items-center justify-between pt-5 px-24 sm:justify-between ">
         <div className="logo w-32 h-full flex items-center justify-center">
           <Link to="/">logo deepak</Link>
         </div>
@@ -61,34 +61,34 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white text-gray-600 absolute top-16 left-0 w-full font-bold">
-          <ul className="flex flex-col items-center gap-4 py-4">
-            <li>
-              <Link to="/" className="hover:underline" onClick={toggleMenu}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/services" className="hover:underline" onClick={toggleMenu}>
-                Our Services
-              </Link>
-            </li>
-            <li>
-              <Link to="/contactus" className="hover:underline" onClick={toggleMenu}>
-                Contacts us
-              </Link>
-            </li>
-            <li>
-              <Link to="/aboutus" className="hover:underline" onClick={toggleMenu}>
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl text-white font-bold" onClick={toggleMenu}>
-                Book Now
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <ul className="flex flex-col items-center gap-4 py-4">
+          <li>
+            <Link to="/" className="hover:underline" onClick={toggleMenu}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/services" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+              Our Services
+            </Link>
+          </li>
+          <li>
+            <Link to="/contactus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+              Contacts us
+            </Link>
+          </li>
+          <li>
+            <Link to="/aboutus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+              About us
+            </Link>
+          </li>
+          <li>
+            <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl sm:text-right md:text-left text-white font-bold" onClick={toggleMenu}>
+              Book Now
+            </Link>
+          </li>
+        </ul>
+      </div>
       )}
     </header>
   );
