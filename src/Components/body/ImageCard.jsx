@@ -10,7 +10,7 @@ function ImageCard() {
   useEffect(() => {
     const timerid = setInterval(() => {
       setIndex((idx) => (idx + 1) % data.length);
-    }, 2000);
+    }, 5000);
     return () => clearInterval(timerid);
   }, [data.length]);
 
@@ -26,8 +26,7 @@ function ImageCard() {
         />
       </div>
 
-      <div className="departName w-full h-auto text-center text-3xl font-bold text-green-600 capitalize tracking-wider leading-4 duration-150">
-        <span className="text-zinc-900 text-3xl mx-7 sm:text-base sm:text-wrap ">Department: </span>
+      <div className="departName w-full h-auto text-center  rounded-xl  text-3xl font-bold text-blue-400 uppercase md:text-2xl tracking-wider leading-4  mt-2">
         {data[index].depName}
       </div>
 

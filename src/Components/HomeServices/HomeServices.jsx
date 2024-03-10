@@ -9,7 +9,7 @@ function HomeServices() {
   useEffect(() => {
     const timerid = setInterval(() => {
       setIndex((idx) => (idx + 1) % serv.length);
-    }, 2000);
+    }, 5000);
     return () => clearInterval(timerid);
   }, [serv.length]);
   
@@ -20,19 +20,19 @@ function HomeServices() {
     }
 
   return (
-    <div className="md:w-1/2 lg:w-1/3 px-4 mb-8">
+    <div className="md:w-1/2 lg:w-full sm:w-[96vw]  m-auto px-4 mb-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <img
-          src={service.image}
-          alt={service.title}
+          src={service[index].image}
+          alt={service[index].title}
           className="w-full h-64 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+          <h3 className="text-xl font-semibold mb-2">{service[index].title}</h3>
           <p className={`text-gray-700 ${isExpanded ? '' : 'line-clamp-3'}`}>
-            {service.description}
+            {service[index].description}
           </p>
-          {service.description.length > 30 && (
+          {service[index].description.length  && (
             <button
               onClick={toggleExpanded}
               className="text-blue-500 font-semibold mt-2 focus:outline-none"
