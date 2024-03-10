@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Information() {
   return (
-    <main className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:items-start">
+    <main className="min-h-screen flex flex-col lg:flex-row justify-between items-center lg:items-start py-5 px-24">
       <div className="details w-full lg:w-1/2 py-8 lg:py-32 px-4 lg:px-10 gap-3 text-center lg:text-left">
         <h1 className="text-2xl lg:text-3xl font-bold">Quality Medical Care Delivered</h1>
         <h1 className="text-2xl lg:text-3xl py-2 font-bold">At The Comfort of Your Home</h1>
@@ -14,9 +14,9 @@ function Information() {
           <Link to="/book">BOOK NOW</Link>
         </button>
       </div>
-      <div className="imglogo mt-24 p-10 m-5 w-full lg:w-[40vw] flex justify-center lg:justify-end mt-10 lg:mt-0 order-first lg:order-none">
+      <div className="imglogo p-20 m-10 w-full lg:w-[40vw] flex justify-center lg:justify-end mt-10 lg:mt-0 order-first lg:order-none">
         <img
-          className="h-[20rem] lg:h-[30rem] w-[20rem] lg:w-[30rem] rounded-full border-yellow-500 border-8"
+          className="h-[20rem] lg:h-[30rem] w-[20rem] lg:w-[30rem] rounded-full border-green-300 border-8"
           src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png"
           alt=""
         />

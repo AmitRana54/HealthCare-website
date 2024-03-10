@@ -9,8 +9,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10">
-      <nav className="container mx-auto h-full flex items-center justify-between">
+    <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10 ">
+      <nav className="container mx-auto h-full flex items-center justify-between pt-5 px-24 ">
         <div className="logo w-32 h-full flex items-center justify-center">
           <Link to="/">logo deepak</Link>
         </div>
@@ -35,8 +35,8 @@ export default function Navbar() {
               </Link>
             </li>
           </ul>
-          <button className="p-2 bg-green-500 rounded-xl text-white font-bold">
-            <Link to="/book">BookNow</Link>
+          <button className="p-3 bg-green-500 rounded-lg text-white font-bold ">
+            <Link to="/book">Book Now</Link>
           </button>
         </div>
         <div className="md:hidden flex items-center ">
@@ -91,7 +91,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl text-white font-bold" onClick={toggleMenu}>
-                BookNow
+                Book Now
               </Link>
             </li>
           </ul>
