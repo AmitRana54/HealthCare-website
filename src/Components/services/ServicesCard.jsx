@@ -5,11 +5,11 @@ function ServicesCard({
   name ,
   image ,
   bgColor ,
-  route
+  route ,
 }) {
 
   return (
-    <div className="w-[300px] rounded-md border mt-7">
+    <div className="w-[300px] rounded-md border mt-5">
       <img
         src={image}
         alt="services image"

@@ -18,7 +18,7 @@ export default function () {
       {card?.map((items, index) => (
         <ServicesCard
           key={index}
-          name={items.service}
+          name={items.service} 
           image={items.img}
           bgColor={items.backGround}
           route={items.route}

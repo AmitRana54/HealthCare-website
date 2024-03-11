@@ -17,7 +17,7 @@ function ImageCard() {
   return (
     
     <div className="h-[90vh] w-full">
-      <h1 className="lg:text-center lg:text-3xl text-zinc-900 sm:text-lg sm:text-center font-bold sm:font-semibold m-9"> Department at our hospital </h1>
+      <h1 className="lg:text-center lg:text-3xl text-zinc-900 sm:text-lg sm:text-center font-bold sm:font-semibold m-9 text-center"> Department at our hospital </h1>
       <div className="imgdiv">
         <img
           className="rounded-lg shadow-lg object-cover w-[60rem] h-96 border-4 border-spacing-8 m-auto duration-150"
