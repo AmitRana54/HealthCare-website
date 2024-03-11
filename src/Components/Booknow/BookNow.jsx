@@ -13,7 +13,7 @@ function BookNow() {
     name: '',
     phoneNumber: '',
     email: '',
-    services: '',
+    services: ' ',
     age: '',
     city: '',
     date: '',
@@ -158,6 +158,7 @@ function BookNow() {
             value={formData.services}
             onChange={handleChange}
           >
+            <option value="none">none</option>
             <option value="ICU">ICU</option>
             <option value="Skill Nursing">Skill Nursing</option>
             <option value="Attendant">Attendant</option>
