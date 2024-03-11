@@ -9,11 +9,10 @@ export default function Navbar() {
   };
 
   return (
-
-    <header className="fixed top-0 p-8 left-0 w-full h-24 bg-white text-black-500 shadow-gray-900 z-10">
-      <nav className="container p-16 mx-auto h-full flex items-center justify-between pt-5 px-4 md:px-24">
-
-        <div className="logo mb-7 w-72 m-10 p-0 h-full flex items-center justify-start">
+    <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
+      <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
+      
+        <div className="logo w-72 m-0 p-0 h-full flex items-center justify-start">
           <Link to="/">
             <img src="./src/Components/Assets/Logo/logo.png" alt="" />
           </Link>
