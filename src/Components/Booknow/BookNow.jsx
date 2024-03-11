@@ -95,7 +95,7 @@ if (submit) {
     )
 
   }
-  return ( <div className="max-w-md mx-auto p-6 rounded-lg border border-gray-300 shadow-md mt-16">
+  return ( <div className="max-w-md mx-auto p-6 rounded-lg border border-gray-300 shadow-md mt-24">
   <h2 className="text-2xl  mb-4 text-center text-green-800 font-bold">Book Now</h2>
   <form className="space-y-4" onSubmit={handleSubmit}>
     <div>

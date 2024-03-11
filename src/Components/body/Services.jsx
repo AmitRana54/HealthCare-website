@@ -8,7 +8,7 @@ export default function () {
 
   return (
     <div className="container mx-auto mt-24 p-10">
-    <h1 className="text-center font-bold text-4xl text-gray-900 mb-6 sm:text-xl sm:text-wrap">
+    <h1 className="lg:text-center font-bold lg:text-3xl text-gray-900  lg:mb-6 text-xl sm:text-wrap">
       Medical Services Offered At Our Hospital
     </h1>
     <h2 className="text-center text-gray-600 text-lg mb-8 sm:text-lg">
