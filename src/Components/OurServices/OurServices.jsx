@@ -4,7 +4,12 @@ import Services from "../body/Services";
 export default function OurServices() {
   return (
     <>
-      <Services />
+    <div className=" h-auto w-full mt-10 "  >  <Services />
+    
+    
+    
+    </div>
+     
     </>
   );
 }

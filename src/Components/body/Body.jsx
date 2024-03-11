@@ -10,10 +10,11 @@ function Body() {
     <>
       <Information />
 
-      <ImageCard />
+     
 
       <Services />
       <HomeServices/>
+      <ImageCard />
       <WhyIHCS/>
     </>
   );

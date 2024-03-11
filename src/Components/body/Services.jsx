@@ -7,11 +7,11 @@ export default function () {
   const [card, setCard] = useState(details);
 
   return (
-    <div className="container mx-auto mt-24 p-10">
-    <h1 className="lg:text-center font-bold lg:text-3xl text-gray-900  lg:mb-6 text-xl sm:text-wrap">
+    <div className="container mx-auto  p-10">
+    <h1 className="lg:text-center  text-center font-bold lg:text-3xl text-gray-900  lg:mb-6 text-lg ">
       Medical Services Offered At Our Hospital
     </h1>
-    <h2 className="text-center text-gray-600 text-lg mb-8 sm:text-lg">
+    <h2 className="text-center text-sm text-gray-800 lg:text-xl mt-3 mb-3 ">
       Medicrov offers a variety of healthcare services in the comfort of our patients’ homes including:
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
