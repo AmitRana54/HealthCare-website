@@ -12,7 +12,7 @@ export default function () {
       Medical Services Offered At Our Hospital
     </h1>
     <h2 className="text-center text-sm text-gray-800 lg:text-xl mt-3 mb-3 ">
-      Medicrov offers a variety of healthcare services in the comfort of our patients’ homes including:
+      Aadesh Health Care offers a variety of healthcare services in the comfort of our patients’ homes including:
     </h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
       {card?.map((items, index) => (
