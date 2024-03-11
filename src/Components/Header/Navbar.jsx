@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -12,7 +13,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
       
-        <div className="logo mt-24 w-16 m-16 p-0 h-full flex items-center justify-start">
+        <div className="logo mt-16 w-16 m-16 p-0 h-full flex items-center justify-start">
        
           <Link to="/">
             <img src="https://www.svgrepo.com/show/345392/medical-health-care-doctor-hospital-medicine-healthcare.svg" alt="" />
