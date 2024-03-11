@@ -13,8 +13,8 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10">
       <nav className="container mx-auto h-full flex items-center justify-between pt-5 px-4 md:px-24">
 
-        <div className="logo w-32 h-full flex items-center justify-center">
-          <Link to="/">logo deepak</Link>
+      <div className="logo w-72 m-10 p-0 h-full flex items-center justify-start">
+          <Link to="/"><img src="./src/Components/Logo/logo.png" alt="" /></Link>
         </div>
         <div className="md:hidden">
           <button className="text-gray-500 focus:outline-none" onClick={toggleMenu}>
