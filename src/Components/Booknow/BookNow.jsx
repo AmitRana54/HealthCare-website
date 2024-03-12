@@ -85,7 +85,7 @@ function BookNow() {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900">
+        <h1 className="text-xl sm:text-xl   text-center lg:text-7xl font-bold text-green-900">
           See our other services
         </h1>
         <Services />
@@ -94,7 +94,7 @@ function BookNow() {
   }
 
   return (
-    <div className="max-w-md mx-auto p-6 rounded-lg border border-gray-300 shadow-md mt-16">
+    <div className="max-w-md mx-auto p-10 rounded-lg border border-gray-300 shadow-md mt-28 mb-16 ">
       <h2 className="text-2xl mb-4 text-center text-green-800 font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>

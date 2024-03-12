@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -9,12 +10,14 @@ export default function Navbar() {
   };
 
   return (
-
-    <header className="fixed top-0 left-0 w-full h-16 bg-white text-gray-500 z-10">
-      <nav className="container mx-auto h-full flex items-center justify-between pt-5 px-4 md:px-24">
-
-        <div className="logo w-32 h-full flex items-center justify-center">
-          <Link to="/">logo deepak</Link>
+    <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
+      <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
+      
+        <div className="logo mt-16 w-16 m-16 p-0 h-full flex items-center justify-start">
+       
+          <Link to="/">
+            <img src="https://www.svgrepo.com/show/345392/medical-health-care-doctor-hospital-medicine-healthcare.svg" alt="" />
+          </Link>
         </div>
         <div className="md:hidden">
           <button className="text-gray-500 focus:outline-none" onClick={toggleMenu}>
@@ -43,16 +46,16 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex items-center gap-6">
           <ul className="flex items-center gap-7 text-center font-bold text-xl">
-            <li className="hover:underline">
+            <li className="hover:underline hover:underline-green-600">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="hover:underline hover:underline-green-600">
               <Link to="/services">Our services</Link>
             </li>
-            <li>
+            <li className="hover:underline hover:underline-green-600">
               <Link to="/contactus">Contact Us</Link>
             </li>
-            <li>
+            <li className="hover:underline hover:underline-green-600">
               <Link to="/aboutus">About us</Link>
             </li>
           </ul>
@@ -64,34 +67,34 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white text-gray-600 absolute top-16 left-0 w-full font-bold">
-        <ul className="flex flex-col items-center gap-4 py-4">
-          <li>
-            <Link to="/" className="hover:underline" onClick={toggleMenu}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/services" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
-              Our Services
-            </Link>
-          </li>
-          <li>
-            <Link to="/contactus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
-              Contacts us
-            </Link>
-          </li>
-          <li>
-            <Link to="/aboutus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
-              About us
-            </Link>
-          </li>
-          <li>
-            <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl sm:text-right md:text-left text-white font-bold" onClick={toggleMenu}>
-              Book Now
-            </Link>
-          </li>
-        </ul>
-      </div>
+          <ul className="flex flex-col items-center gap-4 py-4">
+            <li>
+              <Link to="/" className="hover:underline" onClick={toggleMenu}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/services" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+                Our Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/contactus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+                Contacts us
+              </Link>
+            </li>
+            <li>
+              <Link to="/aboutus" className="hover:underline sm:text-right md:text-left" onClick={toggleMenu}>
+                About us
+              </Link>
+            </li>
+            <li>
+              <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl sm:text-right md:text-left text-white font-bold" onClick={toggleMenu}>
+                Book Now
+              </Link>
+            </li>
+          </ul>
+        </div>
       )}
     </header>
   );
