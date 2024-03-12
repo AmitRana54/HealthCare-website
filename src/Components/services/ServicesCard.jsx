@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function ServicesCard({
   name ,
   image ,
-  bgColor ,
+  miniDiscrip ,
   route ,
 }) {
 
@@ -17,10 +17,10 @@ function ServicesCard({
       />
       <div className="p-4">
         <h1 className="inline-flex items-center text-lg font-semibold">
-         {name} 
+        <Link to={route}>{name}</Link>
         </h1>
         <p className="mt-3 text-sm text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+          {miniDiscrip}
         </p>
         
         <button

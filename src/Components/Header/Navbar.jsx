@@ -19,7 +19,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="md:hidden">
-          <button className="text-gray-500 focus:outline-none" onClick={toggleMenu}>
+          <button className="text-gray-900 focus:outline-none" onClick={toggleMenu}>
             {isMenuOpen ? (
               <svg
                 className="w-6 h-6"

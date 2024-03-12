@@ -85,7 +85,7 @@ function BookNow() {
             </div>
           </div>
         </div>
-        <h1 className="text-xl sm:text-xl   text-center lg:text-7xl font-bold text-green-900">
+        <h1 className="text-xl sm:text-xl  capitalize translate-x-0 text-center lg:text-7xl font-bold text-blue-900">
           See our other services
         </h1>
         <Services />
@@ -94,6 +94,8 @@ function BookNow() {
   }
 
   return (
+    <>
+   
     <div className="max-w-md mx-auto p-10 rounded-lg border border-gray-300 shadow-md mt-28 mb-16 ">
       <h2 className="text-2xl mb-4 text-center text-green-800 font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
@@ -222,6 +224,7 @@ function BookNow() {
         </button>
       </form>
     </div>
+    </>
 )}
 export default BookNow
 
