@@ -16,7 +16,7 @@ function Information() {
   </div>
   <div className="imglogo p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
     <img
-      className="h-[20rem] lg:h-[30rem] w-[20rem] lg:w-[30rem] rounded-full border-green-300 border-8 mt-16 lg:mt-0"
+      className="h-[25rem] lg:h-[25rem] w-[25rem] lg:w-[25rem] rounded-full border-green-300 border-8 mt-16 lg:mt-0"
       src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png"
       alt=""
     />
