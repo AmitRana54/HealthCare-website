@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Information() {
   return (
     <main className="min-h-screen flex flex-col lg:flex-row justify-center lg:justify-between items-center">
-  <div className="details w-full lg:w-1/2 lg:mr-10 px-4 lg:px-10 py-8 lg:py-16 sm:py-28 text-center lg:text-left">
+  <div className="details mb-32 w-full lg:w-1/2 lg:mr-10 px-4 lg:px-10 py-8 lg:py-16 sm:py-28 text-center lg:text-left">
     <h1 className="text-lg lg:text-4xl font-bold mb-4 lg:mb-6">Quality Medical Care Delivered</h1>
     <h1 className="text-lg lg:text-4xl font-bold mb-4 lg:mb-6">At The <span className="text-lg lg:text-5xl font-bold text-orange-400 unde">Comfort of Your Home</span></h1>
     <p className="text-base lg:text-lg lg:px-0 px-4 font-normal">
@@ -14,7 +14,7 @@ function Information() {
       <Link to="/book">BOOK NOW</Link>
     </button>
   </div>
-  <div className="imglogo p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
+  <div className="imglogo mb-32 p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
     <img
       className="h-[20rem] lg:h-[30rem] w-[20rem] lg:w-[30rem] rounded-full border-green-300 border-8 mt-16 lg:mt-0"
       src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png"

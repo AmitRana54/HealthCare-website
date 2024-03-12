@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "/src/assets/Logo/logo.svg"
 
 
 export default function Navbar() {
@@ -14,7 +15,7 @@ export default function Navbar() {
       <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
         <div className="logo mt-24 w-60 m-16 p-0 h-full flex items-center justify-start">
           <Link to="/">
-            <img src="/src/assets/Logo/logo.svg" alt="" /> {/* Corrected image source path */}
+            <img src={Logo} alt="" /> {/* Corrected image source path */}
           </Link>
         </div>
         <div className="md:hidden">
