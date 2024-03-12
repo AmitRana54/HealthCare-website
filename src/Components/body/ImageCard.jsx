@@ -16,13 +16,8 @@ function ImageCard() {
 
   return (
     
-<<<<<<< HEAD
-    <div className="h-[90vh] w-full">
-      <h1 className="lg:text-center lg:text-3xl text-zinc-900 sm:text-lg sm:text-center font-bold sm:font-semibold m-9 text-center"> Department at our hospital </h1>
-=======
     <div className="h-[60vh] w-full">
       <h1 className="lg:text-center lg:text-3xl text-zinc-900 sm:text-lg sm:text-center font-bold sm:font-semibold m-9"> Department at our hospital </h1>
->>>>>>> 5a52e7ebfc4f1fd0ac09c389a9093b8fec08c9de
       <div className="imgdiv">
         <img
           className="rounded-lg shadow-lg object-cover w-[60rem] h-96 border-4 border-spacing-8 m-auto duration-150"
