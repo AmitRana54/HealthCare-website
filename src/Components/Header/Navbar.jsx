@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
-        <div className="logo mt-24 w-60 m-16 p-0 h-full flex items-center justify-start">
+        <div className="logo mt-24 w-52 m-16 p-0 h-full flex items-center justify-start">
           <Link to="/">
             <img src={Logo} alt="" /> {/* Corrected image source path */}
           </Link>
