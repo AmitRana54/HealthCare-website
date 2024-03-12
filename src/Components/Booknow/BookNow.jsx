@@ -85,7 +85,7 @@ function BookNow() {
             </div>
           </div>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900">
+        <h1 className="text-xl sm:text-xl   text-center lg:text-7xl font-bold text-green-900">
           See our other services
         </h1>
         <Services />

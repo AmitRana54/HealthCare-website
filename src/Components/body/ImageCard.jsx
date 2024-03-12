@@ -20,7 +20,7 @@ function ImageCard() {
     <h1 className="lg:text-center lg:text-3xl text-center text-blue-400 sm:text-xl font-bold sm:font-semibold my-6">Department at our hospital</h1>
     <div className="imgdiv">
       <img
-        className="rounded-lg shadow-lg object-cover lg:w-[80vw]  md:max-w-3xl h-72 border-4 border-orange-700 m-auto md:m-0 duration-150"
+        className="rounded-lg shadow-lg object-cover lg:w-[80vw]  md:max-w-3xl h-72 border-4 border-indigo-600 m-auto md:m-0 duration-150"
         src={data[index].depImg}
         alt="Department Image"
       />
