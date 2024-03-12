@@ -94,7 +94,7 @@ function BookNow() {
   }
 
   return (
-    <div className="max-w-md mx-auto p-6 rounded-lg border border-gray-300 shadow-md mt-16">
+    <div className="max-w-md mx-auto p-10 rounded-lg border border-gray-300 shadow-md mt-28 mb-16 ">
       <h2 className="text-2xl mb-4 text-center text-green-800 font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>
