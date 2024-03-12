@@ -1,26 +1,13 @@
-import React, { u, useState } from "react";
+import React, {  useContext, useState } from "react";
 import TemplateServices from "./TemplateServices";
-import { useHomeServData } from "../../Context/HomeservContext";
-import BookNow from "../Booknow/BookNow";
+import AllservicesContext from "../../Context/AllServices";
 
 function Icu() {
-  const { Homeserv } = useHomeServData();
-  const [card, setCard] = useState(Homeserv);
+  const {Allserv} = useContext(AllservicesContext)
+  const [data, setdata] = useState(Allserv)
   return (
     <>
-      <TemplateServices
-        imgLink={card[0].ImgLink}
-        serviceName={card[0].Name}
-        aboutService={card[0].infoServ}
-      />
-      <span>
-        {" "}
-        <h1 className="text-2xl text-center font-bold text-pretty text-green-600 tracking-wider leading-3 m-4 ">
-          {" "}
-          {card[0].Name} services{" "}
-        </h1>{" "}
-      </span>
-      <BookNow />
+      <TemplateServices    imgLink={data[0]. ImgLink}  serviceName={data[0].Name}   aboutService={data[0].infoServ}  need={data[0].need}           />
     </>
   );
 }
