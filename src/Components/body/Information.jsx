@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 function Information() {
   return (
     <main    className=" min-h-screen w-full flex flex-col"       >
-      <div className="max-h-full flex flex-col mt-14 lg:flex-row justify-center lg:justify-between items-center">
-        <div className="details max-h-full bg-slate-100 mb-10 w-full lg:w-1/2 lg:mr-10 px-4 lg:px-5 py-8 lg:py-16 sm:py-28 text-center lg:text-left">
+      <div className="max-h-full flex flex-col  mt-14 lg:flex-row justify-center lg:justify-between items-center">
+        <div className="details max-h-full lg:mb-12 mb-8   w-full lg:w-1/2 lg:mr-10 px-4 lg:px-5 py-8 lg:py-16 sm:py-28 text-center lg:text-left">
           <h1 className="text-lg lg:text-4xl font-bold mb-4 lg:mb-6">
             Quality Medical Care Delivered
           </h1>
@@ -25,7 +25,7 @@ function Information() {
             <Link to="/book">BOOK NOW</Link>
           </button>
         </div>
-        <div className="imglogo h-auto mb-32 p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
+        <div className="imglogo bg-slate-500 h-auto mb-1 lg:mb-12 p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
           <img
             className="h-[25rem] lg:h-[25rem] w-[25rem] lg:w-[25rem] rounded-full border-green-300 border-8 mt-16 lg:mt-0"
             src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png"
@@ -33,10 +33,12 @@ function Information() {
           />
         </div>
       </div>
-      <marquee behavior="scroll" className="text-2xl text-green-700 capitalize md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center whitespace-nowrap mx-4" direction="left">
+      <div  className="h-1 w-full bg-blue-700"     ></div>
+      <marquee behavior="scroll" className="text-2xl text-blue-700 capitalize md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center whitespace-nowrap mx-4" direction="left">
         {" "}
         Indian Health Care center, located in Shranpur, provides exceptional medical care and compassionate service                                     {" "}
       </marquee>
+      <div  className="h-1 w-full bg-blue-700 "     ></div>
     </main>
   );
 }

@@ -16,7 +16,7 @@ function TemplateServices({ imgLink, serviceName, need, aboutService }) {
        
         {/* Service Details */}
         <div className="w-full lg:w-auto mt-8 lg:mt-0 lg:ml-8 flex flex-col gap-5 lg:gap-10">
-          <h1 className="text-3xl font-bold text-blue-500 mt-4 mb-5 lg:mb-0 underline">
+          <h1 className="text-3xl font-bold ml-4  text-blue-500 mt-4 mb-5 lg:mb-0 underline">
             {serviceName}
           </h1>
           <div className="flex flex-col gap-5">
