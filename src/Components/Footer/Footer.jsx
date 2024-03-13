@@ -15,7 +15,7 @@ export default function () {
         </div>
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
           <h3 className="text-base font-bold mb-4 sm:text-left md:text-left lg:text-3xl         ">Our Services</h3>
-          <ul className="text-orange-500  text-xl   list-disc   ">
+          <ul className="text-orange-500  text-xl  list-none   ">
             <li>ICU Care</li>
             <li>Skill Nursing</li>
             <li>Attendant</li>
