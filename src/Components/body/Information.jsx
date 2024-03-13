@@ -34,11 +34,11 @@ function Information() {
         </div>
       </div>
       {/* <div  className="h-1 w-full bg-zinc-700"     ></div> */}
-      <marquee behavior="scroll" className="text-2xl text-blue-700 mb-3 capitalize md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center whitespace-nowrap mx-4" direction="left">
+      <marquee behavior="scroll" className="text-2xl text-red-600 mb-3 capitalize md:text-3xl lg:text-4xl xl:text-5xl font-bold text-center whitespace-nowrap mx-4" direction="left">
         {" "}
         Indian Health Care center, located in Shranpur, provides exceptional medical care and compassionate service                                     {" "}
       </marquee>
-      <div  className="h-1 w-full bg-zinc-700 "     ></div>
+      <div  className="h-1 w-full bg-black "     ></div>
     </main>
   );
 }

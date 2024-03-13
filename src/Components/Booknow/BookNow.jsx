@@ -96,8 +96,8 @@ function BookNow() {
   return (
     <>
    
-    <div className="max-w-md mx-auto p-10 rounded-lg border border-gray-300 shadow-md lg:mt-28 mb-16 ">
-      <h2 className="text-2xl mb-4 text-center text-green-800 font-bold">Book Now</h2>
+    <div className="max-w-md mx-auto p-10 rounded-lg border bg-[ #F0FFF0] border-blue-500 shadow-lg lg:mt-28 mb-16 ">
+      <h2 className="text-4xl mb-4 text-center text-green-500 font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>
           <label className="block mb-1 font-serif font-semibold" htmlFor="name">
@@ -161,14 +161,11 @@ function BookNow() {
             onChange={handleChange}
           >
             <option value="none">none</option>
-            <option value="ICU">ICU</option>
-            <option value="Skill Nursing">Skill Nursing</option>
-            <option value="Attendant">Attendant</option>
-            <option value="physiotherapist">physiotherapist</option>
-            <option value="Japa Maid">Japa Maid</option>
-            <option value="Cancer Patient">Cancer Patient</option>
-            <option value="Surgical Bed">Surgical Bed</option>
-            <option value='Suction Machine'>Suction Machine</option>
+            <option value="Patient Monitor">Patient Monitor</option>
+            <option value="Craps">Craps</option>
+            <option value="Ventilators">Ventilators</option>
+            <option value="Oximeter Machine">Oximeter Machine</option>
+            
           </select>
         </div>
         <div>
@@ -183,6 +180,7 @@ function BookNow() {
             onChange={handleChange}
             required
           >
+            <option value="none">None</option>
             <option value="child">Child</option>
             <option value='adult'>Adult</option>
             <option value="senior">Senior</option>
@@ -218,7 +216,7 @@ function BookNow() {
         </div>
         <button
           type="submit"
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+          className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 font-bold"
         >
           Submit
         </button>
