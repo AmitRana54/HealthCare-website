@@ -7,7 +7,7 @@ function SictionMachine() {
     const [data, setdata] = useState(Allserv)
     return (
       <>
-        <TemplateServices    imgLink={data[0]. ImgLink}  serviceName={data[0].Name}   aboutService={data[0].infoServ}  need={data[0].need}           />
+        <TemplateServices    imgLink={data[7]. ImgLink}  serviceName={data[7].Name}   aboutService={data[7].infoServ}  need={data[7].need}           />
       </>
     );
 }

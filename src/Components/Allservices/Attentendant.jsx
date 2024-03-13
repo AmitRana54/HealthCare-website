@@ -8,7 +8,7 @@ function Attentendant() {
     const [data, setdata] = useState(Allserv)
     return (
       <>
-        <TemplateServices    imgLink={data[0]. ImgLink}  serviceName={data[0].Name}   aboutService={data[0].infoServ}  need={data[0].need}           />
+        <TemplateServices    imgLink={data[2]. ImgLink}  serviceName={data[2].Name}   aboutService={data[2].infoServ}  need={data[2].need}           />
       </>
     );
 }

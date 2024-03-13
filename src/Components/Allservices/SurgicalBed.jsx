@@ -8,7 +8,7 @@ function SurgicalBed() {
     const [data, setdata] = useState(Allserv)
     return (
       <>
-        <TemplateServices    imgLink={data[0]. ImgLink}  serviceName={data[0].Name}   aboutService={data[0].infoServ}  need={data[0].need}           />
+        <TemplateServices    imgLink={data[6]. ImgLink}  serviceName={data[6].Name}   aboutService={data[6].infoServ}  need={data[6].need}           />
       </>
     );
 }

@@ -16,7 +16,7 @@ function ServicesCard({
         className="h-[200px] w-full rounded-t-md object-cover"
       />
       <div className="p-4">
-        <h1 className="inline-flex items-center  underline-offset-auto text-lg font-semibold">
+        <h1 className="inline-flex items-center  underline underline-offset-2  hover:text-green-500  text-lg font-semibold">
         <Link to={route}>{name}</Link>
         </h1>
         <p className="mt-3 text-sm text-gray-600">

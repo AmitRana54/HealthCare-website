@@ -7,7 +7,7 @@ function Physiotherapist() {
     const [data, setdata] = useState(Allserv)
     return (
       <>
-        <TemplateServices    imgLink={data[0]. ImgLink}  serviceName={data[0].Name}   aboutService={data[0].infoServ}  need={data[0].need}           />
+        <TemplateServices    imgLink={data[3]. ImgLink}  serviceName={data[3].Name}   aboutService={data[3].infoServ}  need={data[3].need}           />
       </>
     );
 }
