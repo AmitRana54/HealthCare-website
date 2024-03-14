@@ -16,22 +16,21 @@ function ImageCard() {
 
   return (
     
-    <div className="h-[60vh] w-full">
-      <h1 className="text-center lg:text-3xl text-[#00446B] text-2xl sm:text-center font-bold  m-9"> Department at our hospital </h1>
-      <div className="imgdiv">
-        <img
-          className="rounded-lg  object-cover  w-96 lg:w-[70rem] h-72 border-4 border-spacing-8 m-auto duration-150"
-          src={data[index].depImg}
-          alt="Department Image"
-        />
+    <div className="h-80 w-full bg-blue-50">
+    <h1 className="text-center lg:text-4xl capitalize text-[#00446B] text-2xl sm:text-center font-bold mb-2"> Department at our hospital </h1>
+    <div className="relative">
+      <img
+        className="rounded-lg object-cover w-full h-72 lg:w-[70rem] lg:h-[30rem] border-4 border-spacing-8 m-auto duration-150"
+        src={data[index].depImg}
+        alt="Department Image"
+      />
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="bg-white bg-opacity-75 p-6 rounded-lg">
+          <div className="departName text-center text-lg lg:text-3xl font-bold text-gray-800 capitalize tracking-wider leading-6">
+            {data[index].depName}
+          </div>
+        </div>
       </div>
-
-    
-
-    
-  
-    <div className="departName w-full h-auto text-center font-serif rounded-xl lg:text-3xl text-lg font-bold text-black capitalize tracking-wider leading-6 mt-8 px-4 py-2 shadow-md md:m-0 m-6">
-      {data[index].depName}
     </div>
   </div>
   );
