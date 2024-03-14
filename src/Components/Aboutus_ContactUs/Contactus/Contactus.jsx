@@ -16,7 +16,7 @@ function Contactus() {
                     <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-3xl">Rishikesh Head Office</p>
                     <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">5, 1st Floor, Nagar Market Barola, Sec.-49, Near Sec. -76 Metro Station Noida
 
-                        info@medicrov.in
+                        info@aadeshhealthcare.in
                         (+91) 8279917442</p>
                     <hr className="mt-8" />
                 </div>

@@ -21,7 +21,7 @@ function HomeServices() {
 
   return (
     <div className="md:w-1/2 lg:w-full sm:w-[96vw]  m-auto px-4 mb-8">
-       <h1 className="relative lg:text-4xl text-2xl mb-3 text-blue-700 text-center font-bold">
+       <h1 className="relative lg:text-4xl text-2xl mb-3 text-[#00446B] text-center font-bold">
       Home Services We Provide
     </h1>
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -38,7 +38,7 @@ function HomeServices() {
           {service[index].description.length  && (
             <button
               onClick={toggleExpanded}
-              className="text-blue-500 font-semibold mt-2 focus:outline-none"
+              className="text-[#00446B] font-semibold mt-2 focus:outline-none"
             >
               {isExpanded ? 'Read Less' : 'Read More'}
             </button>
