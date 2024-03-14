@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-20 flex items-center justify-between px-4 md:px-8">
-        <div className="logo mb-13 w-1/2 ml-8 p-0 h-full flex items-center ">
+        <div className="logo mb-13 w-1/2 ml-4 lg:ml-8 p-0 h-full flex items-center ">
           <Link to="/">
             <img className="h-full w-60" src={Logo} alt="" />
           </Link>
