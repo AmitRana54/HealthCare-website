@@ -58,7 +58,7 @@ export default function Navbar() {
             </li>
           </ul>
           <button className="p-2 mb-2 bg-[#0D857B] rounded-lg text-white font-bold">
-            <Link to="/book" onClick={toggleMenu}>Book Now</Link>
+            <Link to="/book" >Book Now</Link>
           </button>
         </div>
       </nav>
