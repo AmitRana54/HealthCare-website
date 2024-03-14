@@ -7,10 +7,10 @@ function Aboutus() {
     
   return (
     <>
-    <div className="bg-gray-100  mt-16 p-12">
+    <div className="bg-gray-100  mt-6 p-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className=" text-3xl font:bold text-[#00446B] font-semibold lg:text-6xl tracking-wide uppercase">About Us</h2>
+          <h2 className=" text-3xl font:bold leading-8 text-[#00446B] font-bold lg:text-6xl tracking-wide uppercase">About Us</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Providing Quality Healthcare
           </p>

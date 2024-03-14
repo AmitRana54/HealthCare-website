@@ -10,9 +10,9 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-white text-gray-700 shadow-gray-900 z-10">
+    <header className="sticky top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-20 flex items-center justify-between px-4 md:px-8">
-        <div className="logo mb-13 w-1/2 ml-8 p-0 h-full flex items-center justify-start">
+        <div className="logo mb-13 w-1/2 ml-8 p-0 h-full flex items-center ">
           <Link to="/">
             <img className="h-full w-60" src={Logo} alt="" />
           </Link>
@@ -43,18 +43,18 @@ export default function Navbar() {
           </button>
         </div>
         <div className={`hidden md:flex items-center gap-6 ${isMenuOpen ? "flex flex-col" : ""}`}>
-          <ul className="flex flex-col md:flex-row items-center gap-7 text-center font-bold text-xl">
+          <ul className="flex flex-col md:flex-row items-center gap-5 text-center font-bold text-xl">
             <li className="hover:underline hover:text-[#0D857B]">
-              <Link to="/" onClick={toggleMenu}>Home</Link>
+              <Link to="/" >Home</Link>
             </li>
             <li className="hover:underline hover:text-[#0D857B]">
-              <Link to="/services" onClick={toggleMenu}>Our Services</Link>
+              <Link to="/services" >Our Services</Link>
             </li>
             <li className="hover:underline hover:text-[#0D857B]">
-              <Link to="/contactus" onClick={toggleMenu}>Contact Us</Link>
+              <Link to="/contactus" >Contact Us</Link>
             </li>
             <li className="hover:underline hover:text-[#0D857B]">
-              <Link to="/aboutus" onClick={toggleMenu}>About Us</Link>
+              <Link to="/aboutus" >About Us</Link>
             </li>
           </ul>
           <button className="p-2 mb-2 bg-[#0D857B] rounded-lg text-white font-bold">
