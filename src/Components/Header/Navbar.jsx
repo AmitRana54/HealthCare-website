@@ -10,14 +10,14 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
-      <nav className="container mx-auto h-20 flex items-center justify-between px-4 md:px-8">
-        <div className="logo mb-13 w-1/2 ml-4 lg:ml-8 p-0 h-full flex items-center ">
+    <header className="sticky sm:fixed top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
+      <nav className="container shadow-gray-900 mx-auto h-20 flex items-center justify-between px-4 md:px-8">
+        <div className="w-44 md:w-72 sm:w-52 md:mt-10 mt-3 ml-4 lg:ml-8  sm:mt-10 sm:mb-12 h-full flex items-center">
           <Link to="/">
-            <img className="h-full w-60" src={Logo} alt="" />
+            <img className="h-auto" src={Logo} alt="Logo" />
           </Link>
         </div>
-        <div className="md:hidden">
+        <div className="md:hidden md:mr-0">
           <button className="text-gray-900 focus:outline-none" onClick={toggleMenu}>
             {isMenuOpen ? (
               <svg
@@ -51,14 +51,14 @@ export default function Navbar() {
               <Link to="/services" >Our Services</Link>
             </li>
             <li className="hover:underline hover:text-[#0D857B]">
-              <Link to="/contactus" >Contact Us</Link>
+              <Link to="/contactus">Contact Us</Link>
             </li>
             <li className="hover:underline hover:text-[#0D857B]">
               <Link to="/aboutus" >About Us</Link>
             </li>
           </ul>
           <button className="p-2 mb-2 bg-[#0D857B] rounded-lg text-white font-bold">
-            <Link to="/book" >Book Now</Link>
+            <Link to="/book">Book Now</Link>
           </button>
         </div>
       </nav>

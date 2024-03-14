@@ -114,7 +114,7 @@ function BookNow() {
 
   return (
     <>
-      <div className="max-w-md mx-auto p-10 rounded-lg border bg-zinc-100 border-blue-500 shadow-lg lg:mt-16 mb-16 ">
+      <div className="max-w-md mx-auto p-10 rounded-lg border bg-zinc-100 border-blue-500 shadow-lg lg:mt-20 mb-16 ">
         <h2 className="text-4xl mb-4 text-center text-[#0D857B] font-bold">
           Book Now
         </h2>
