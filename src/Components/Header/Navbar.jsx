@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "/src/assets/Logo/logo.svg"
+import Logo from "/src/assets/Logo/logo.png"
 
 
 export default function Navbar() {
@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
+    <header className="fixed top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
         <div className="logo mb-16 w-1/4 m-16 p-0 h-full flex items-center justify-start">
           <Link to="/">
@@ -45,20 +45,20 @@ export default function Navbar() {
         </div>
         <div className="hidden md:flex items-center gap-6">
           <ul className="flex items-center gap-7 text-center font-bold text-xl">
-            <li className="hover:underline hover:underline-green-600">
+            <li className="hover:underline hover:text-[#0D857B]">
               <Link to="/">Home</Link>
             </li>
-            <li className="hover:underline hover:underline-green-600">
+            <li className="hover:underline hover:text-[#0D857B]">
               <Link to="/services">Our services</Link>
             </li>
-            <li className="hover:underline hover:underline-green-600">
+            <li className="hover:underline hover:text-[#0D857B]">
               <Link to="/contactus">Contact Us</Link>
             </li>
-            <li className="hover:underline hover:underline-green-600">
+            <li className="hover:underline hover:text-[#0D857B]">
               <Link to="/aboutus">About us</Link>
             </li>
           </ul>
-          <button className="p-2 mb-2 bg-green-500 rounded-lg text-white font-bold">
+          <button className="p-2 mb-2 bg-[#0D857B] rounded-lg text-white font-bold">
             <Link to="/book">Book Now</Link>
           </button>
         </div>
@@ -88,7 +88,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/book" className="hover:underline p-2 bg-green-500 rounded-xl sm:text-right md:text-left text-white font-bold" onClick={toggleMenu}>
+              <Link to="/book" className="hover:underline p-2 bg-[#0D857B] rounded-xl sm:text-right md:text-left text-white font-bold" onClick={toggleMenu}>
                 Book Now
               </Link>
             </li>

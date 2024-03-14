@@ -73,7 +73,7 @@ function BookNow() {
           <div className="max-w-md mx-auto bg-green-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:flex-shrink-0">
-                <svg className="h-12 w-12 text-green-500 mt-8 ml-8" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg className="h-12 w-12 text-[#0D857B] mt-8 ml-8" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M0 0h24v24H0z" stroke="none" />
                   <path d="M5 13l4 4L19 7" />
                 </svg>
@@ -97,7 +97,7 @@ function BookNow() {
     <>
    
     <div className="max-w-md mx-auto p-10 rounded-lg border bg-zinc-100 border-blue-500 shadow-lg lg:mt-28 mb-16 ">
-      <h2 className="text-4xl mb-4 text-center text-green-500 font-bold">Book Now</h2>
+      <h2 className="text-4xl mb-4 text-center text-[#0D857B] font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>
           <label className="block mb-1bg-black text-black font-serif font-semibold" htmlFor="name">
@@ -197,7 +197,7 @@ function BookNow() {
             value={formData.city}
             onChange={handleChange}
           >
-            <option value="Sharanpur">Sharanpur</option>
+            <option value="Saharanpur">Sharanpur</option>
             <option value="Rishikesh">Rishikesh</option>
           </select>
         </div>
@@ -216,7 +216,7 @@ function BookNow() {
         </div>
         <button
           type="submit"
-          className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 font-bold"
+          className="bg-[#0D857B] text-white px-4 py-2 rounded-md hover:bg-blue-600 font-bold"
         >
           Submit
         </button>
