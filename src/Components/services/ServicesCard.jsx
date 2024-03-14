@@ -9,7 +9,7 @@ function ServicesCard({
 }) {
 
   return (
-    <div className=" w-[420px] lg:w-[300px]  m-auto lg:h-30 rounded-md border mt-5">
+    <div className="w-[300px] rounded-md border mt-5">
       <img
         src={image}
         alt="services image"
