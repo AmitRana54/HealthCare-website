@@ -25,7 +25,7 @@ function Information() {
             <Link to="/book">BOOK NOW</Link>
           </button>
         </div>
-        <div className="imglogo h-20rem w-20rem lg:h-[40vw] mb-1 lg:mb-12 p-10 lg:p-20 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
+        <div className="imglogo h-20rem w-20rem lg:h-[40vw] mb-1 lg:mb-12 p-3 lg:p-8 w-full lg:w-[40vw] flex justify-center order-first lg:order-none">
           <img
             className="h-[25rem] lg:h-[25rem] w-[25rem] lg:w-[25rem] rounded-full border-[#0D857B] border-8 mt-16 lg:mt-0"
             src="https://medicrov.com/wp-content/uploads/2024/01/Untitled-design.png"

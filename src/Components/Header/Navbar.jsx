@@ -10,11 +10,11 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 left-0 w-full bg-white text-gray-500 shadow-gray-900 z-10">
-      <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
-        <div className="logo mb-13 w-1/2 m-16 p-0 h-full flex items-center justify-start">
+    <header className="sticky top-0 left-0 w-full bg-white text-gray-700 shadow-gray-900 z-10">
+      <nav className="container mx-auto h-20 flex items-center justify-between px-4 md:px-8">
+        <div className="logo mb-13 w-1/2 ml-8 p-0 h-full flex items-center justify-start">
           <Link to="/">
-            <img src={Logo} alt="" />
+            <img className="h-full w-60" src={Logo} alt="" />
           </Link>
         </div>
         <div className="md:hidden">
