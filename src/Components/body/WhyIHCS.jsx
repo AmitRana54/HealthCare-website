@@ -3,7 +3,7 @@ import React from "react";
 function WhyIHCS() {
   return (
     
-     <div className="max-w-7xl mt-6  lg:mt-28 px-4 py-8">
+     <div className="max-w-7xl mt-6 ml-28  lg:mt-28 px-4 py-8">
       <h1 className="text-center text-[1.3rem] font-bold mb-2 mt-2 lg:text-3xl lg:mt-20 text-[#00446B] ">  Why Indian Health Care Services</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded-lg p-6">

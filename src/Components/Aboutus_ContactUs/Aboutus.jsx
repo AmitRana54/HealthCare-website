@@ -10,7 +10,7 @@ function Aboutus() {
     <div className="bg-gray-100  mt-6 p-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
-          <h2 className=" text-3xl font:bold leading-8 text-[#00446B] font-bold lg:text-6xl tracking-wide uppercase">About Us</h2>
+          <h2 className="text-3xl sm:mt-12 font:bold leading-8 text-[#00446B] font-bold lg:text-6xl tracking-wide uppercase">About Us</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Providing Quality Healthcare
           </p>
@@ -24,7 +24,7 @@ function Aboutus() {
             <div className="flex flex-col items-center">
               <div className="rounded-lg bg-white p-6 max-w-sm mx-auto shadow-md border border-gray-200">
                 <div className="flex justify-center">
-                  <svg className="h-12 w-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-12 w-12 text-[#00446B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                   </svg>
                 </div>
@@ -36,7 +36,7 @@ function Aboutus() {
             <div className="flex flex-col items-center mt-8 md:mt-0">
               <div className="rounded-lg bg-white p-6 max-w-sm mx-auto shadow-md border border-gray-200">
                 <div className="flex justify-center">
-                  <svg className="h-12 w-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-12 w-12 text-[#00446B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                   </svg>
                 </div>
@@ -48,7 +48,7 @@ function Aboutus() {
             <div className="flex flex-col items-center mt-8 lg:mt-0">
               <div className="rounded-lg bg-white p-6 max-w-sm mx-auto shadow-md border border-gray-200">
                 <div className="flex justify-center">
-                  <svg className="h-12 w-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-12 w-12 text-[#00446B]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"></path>
                   </svg>
                 </div>

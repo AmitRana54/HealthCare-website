@@ -70,7 +70,7 @@ function BookNow() {
     return (
       <div className="h-auto w-screen flex items-center justify-center flex-col">
         <div className="h-96 w-screen flex items-center justify-center">
-          <div className="max-w-md mx-auto bg-green-50 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div className="max-w-md mx-auto bg-[#0D857B] rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:flex-shrink-0">
                 <svg className="h-12 w-12 text-[#0D857B] mt-8 ml-8" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -96,7 +96,7 @@ function BookNow() {
   return (
     <>
    
-    <div className="max-w-md mx-auto p-10 rounded-lg border bg-zinc-100 border-blue-500 shadow-lg lg:mt-28 mb-16 ">
+    <div className="max-w-md sm:mt-24 sm:w-70 mx-auto p-12 rounded-lg border bg-zinc-100 border-[#00446B] shadow-lg lg:mt-28 mb-16 ">
       <h2 className="text-4xl mb-4 text-center text-[#0D857B] font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>
