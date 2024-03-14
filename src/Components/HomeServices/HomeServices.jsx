@@ -21,14 +21,14 @@ function HomeServices() {
 
   return (
     <div className="md:w-1/2 lg:w-full sm:w-[96vw]  m-auto px-4 mb-8">
-       <h1 className="relative lg:text-4xl text-2xl mb-3 text-blue-900 text-center font-bold">
+       <h1 className="relative lg:text-4xl text-2xl mb-3 text-blue-700 text-center font-bold">
       Home Services We Provide
     </h1>
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
         <img
           src={service[index].image}
           alt={service[index].title}
-          className="w-full h-64 object-cover"
+          className="w-full h-72 object-cover"
         />
         <div className="p-6">
           <h3 className="text-xl font-semibold mb-2">{service[index].title}</h3>
