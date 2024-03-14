@@ -96,11 +96,11 @@ function BookNow() {
   return (
     <>
    
-    <div className="max-w-md mx-auto p-10 rounded-lg border bg-[ #F0FFF0] border-blue-500 shadow-lg lg:mt-28 mb-16 ">
+    <div className="max-w-md mx-auto p-10 rounded-lg border bg-zinc-100 border-blue-500 shadow-lg lg:mt-28 mb-16 ">
       <h2 className="text-4xl mb-4 text-center text-green-500 font-bold">Book Now</h2>
       <form className="space-y-4" onSubmit={handleSubmit} ref={form}>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="name">
+          <label className="block mb-1bg-black text-black font-serif font-semibold" htmlFor="name">
             <span className="text-red-500">*</span> Name:
           </label>
           <input
@@ -114,7 +114,7 @@ function BookNow() {
           />
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="phoneNumber">
+          <label className="block mb-1 text-black font-serif font-semibold" htmlFor="phoneNumber">
             <span className="text-red-500">*</span> Phone Number:
           </label>
           <input
@@ -132,7 +132,7 @@ function BookNow() {
           )}
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="email">
+          <label className="block mb-1 text-black font-serif font-semibold" htmlFor="email">
             <span className="text-red-500">*</span> Email:
           </label>
           <input
@@ -150,7 +150,7 @@ function BookNow() {
           )}
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="services">
+          <label className="block mb-1 text-black font-serif font-semibold" htmlFor="services">
             Services:
           </label>
           <select
@@ -169,7 +169,7 @@ function BookNow() {
           </select>
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="age">
+          <label className="block mb-1 bg-blackfont-serif text-black font-semibold" htmlFor="age">
             Age:
           </label>
           <select
@@ -187,7 +187,7 @@ function BookNow() {
           </select>
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="city">
+          <label className="block mb-1 text-black font-serif font-semibold" htmlFor="city">
             City:
           </label>
           <select
@@ -202,7 +202,7 @@ function BookNow() {
           </select>
         </div>
         <div>
-          <label className="block mb-1 font-serif font-semibold" htmlFor="date">
+          <label className="block mb-1 text-black font-serif font-semibold" htmlFor="date">
             Date:
           </label>
           <input
