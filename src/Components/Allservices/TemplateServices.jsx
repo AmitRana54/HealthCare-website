@@ -16,12 +16,12 @@ function TemplateServices({ imgLink, serviceName, need, aboutService }) {
        
         {/* Service Details */}
         <div className="w-full lg:w-auto mt-8 lg:mt-0 lg:ml-8 flex flex-col gap-5 lg:gap-10">
-          <h1 className="text-3xl font-bold ml-4  text-blue-500 mt-4 mb-5 lg:mb-0 underline">
+          <h1 className="text-3xl font-bold ml-4  text-black mt-4 mb-5 lg:mb-0 underline">
             {serviceName}
           </h1>
           <div className="flex flex-col gap-5">
             {aboutService.map((item, index) => (
-              <p key={index} className="text-xl lg:ml-5 text-ellipsis text-wrap ml-5 text-gray-600">
+              <p key={index} className="text-xl lg:ml-5 text-ellipsis text-wrap ml-5 text-zinc-800">
                 {item}
               </p>
             ))}
@@ -29,12 +29,12 @@ function TemplateServices({ imgLink, serviceName, need, aboutService }) {
         </div>
         {/* Service Reasons */}
         <div className="w-full lg:w-auto mt-8 lg:mt-0 lg:ml-10 flex flex-col gap-5 lg:gap-10">
-          <h2 className="text-3xl font-bold text-blue-500 mt-4 mb-5 capitalize text-center">
+          <h2 className="text-3xl font-bold text-black mt-4 mb-5 capitalize text-center">
             Why you need {serviceName} service
           </h2>
           <div className="flex flex-col gap-5 lg:ml-5 text-ellipsis text-wrap ml-5 ">
             {need.map((item, index) => (
-              <p key={index} className="text-xl text-gray-600 list-disc ">
+              <p key={index} className="text-xl text-zinc-800 list-disc ">
                 {   item}
               </p>
             ))}
