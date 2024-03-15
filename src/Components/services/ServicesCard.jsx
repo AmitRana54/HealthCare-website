@@ -1,12 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ServicesCard({
-  name,
-  image,
-  miniDiscrip,
-  route,
-}) {
+function ServicesCard({ name, image, miniDiscrip, route }) {
   return (
     <div className="w-full md:w-[300px] rounded-md border mt-5">
       <img
@@ -19,13 +14,14 @@ function ServicesCard({
           <Link to={route}>{name}</Link>
         </h1>
         <p className="mt-3 text-sm text-gray-600">{miniDiscrip}</p>
-
-        <button
-          type="button"
-          className="mt-4 w-full rounded-md bg-[#0D857B] px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-        >
-          <Link to="/book">Book Now</Link>
-        </button>
+        <Link to="/book">
+          <button
+            type="button"
+            className="mt-4 w-full rounded-md bg-[#0D857B] px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+          >
+            Book Now
+          </button>
+        </Link>
       </div>
     </div>
   );
