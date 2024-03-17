@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "/src/assets/Logo/logo.svg"
 
 
 export default function Navbar() {
@@ -12,15 +13,13 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white text-black-500 shadow-gray-900 z-10">
       <nav className="container mx-auto h-24 flex items-center justify-between px-4 md:px-8">
-      
-        <div className="logo mt-16 w-16 m-16 p-0 h-full flex items-center justify-start">
-       
+        <div className="logo mb-16 w-1/4 m-16 p-0 h-full flex items-center justify-start">
           <Link to="/">
-            <img src="https://www.svgrepo.com/show/345392/medical-health-care-doctor-hospital-medicine-healthcare.svg" alt="" />
+            <img src={Logo} alt="" /> {/* Corrected image source path */}
           </Link>
         </div>
         <div className="md:hidden">
-          <button className="text-gray-500 focus:outline-none" onClick={toggleMenu}>
+          <button className="text-gray-900 focus:outline-none" onClick={toggleMenu}>
             {isMenuOpen ? (
               <svg
                 className="w-6 h-6"

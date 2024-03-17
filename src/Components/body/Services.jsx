@@ -20,7 +20,7 @@ export default function () {
           key={index}
           name={items.service} 
           image={items.img}
-          bgColor={items.backGround}
+          miniDiscrip={items.miniDiscrip}
           route={items.route}
         />
       ))}
