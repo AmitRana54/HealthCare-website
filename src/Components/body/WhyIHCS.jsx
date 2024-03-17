@@ -7,7 +7,7 @@ function WhyIHCS() {
         {" "}
         Why Indian Health Care Services
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-3 gap-8 mt-8">
+      <div className="grid grid-cols-1  lg:grid-rows-1 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded-lg p-6">
           <img
             src="https://medicrov.com/wp-content/uploads/2024/01/Physical-therapy-exercise-bro.svg"
