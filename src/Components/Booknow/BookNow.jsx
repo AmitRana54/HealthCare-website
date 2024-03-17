@@ -54,10 +54,12 @@ function BookNow() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmit(true);
-    window.location(0, 0);
+    
+    
     const valid = validate(formData.phoneNumber, formData.email);
     if (valid) {
+      setSubmit(true);
+      window.location(0, 0);
       try {
         await emailjs.sendForm(
           "service_ldpgx1u",
@@ -77,7 +79,7 @@ function BookNow() {
     return (
       <div className="h-auto w-screen flex items-center justify-center flex-col">
         <div className="h-96 w-screen flex items-center justify-center">
-          <div className="max-w-md mx-auto bg-green-300 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div className="max-w-md mx-auto bg-green-100 rounded-xl shadow-md overflow-hidden md:max-w-2xl">
             <div className="md:flex">
               <div className="md:flex-shrink-0">
                 <svg
