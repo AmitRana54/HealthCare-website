@@ -54,12 +54,11 @@ function BookNow() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    
+
     const valid = validate(formData.phoneNumber, formData.email);
     if (valid) {
       setSubmit(true);
-      window.location(0, 0);
+      window.scrollTo(0, 0);
       try {
         await emailjs.sendForm(
           "service_ldpgx1u",

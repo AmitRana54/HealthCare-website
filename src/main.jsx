@@ -34,7 +34,7 @@ const routes = createBrowserRouter(
       <Route path="/skillnursing" element={<SkillNursing />} />
       <Route path="/attendant" element={<Attentendant />} />
       <Route path="/physiotherapist" element={<Physiotherapist />} />
-      <Route path="/japamiad" element={<JapaMaid />} />
+      <Route path="/japamaid" element={<JapaMaid />} />
       <Route path="/cancerpatient" element={<CancerPatient />} />
       <Route path="/surgicalbed" element={<SurgicalBed />} />
       <Route path="/suctionmachine" element={<SuctionMachine />} />
