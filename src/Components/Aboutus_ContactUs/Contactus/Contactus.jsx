@@ -3,7 +3,11 @@ import AddressMap from "./Map";
 
 function Contactus() {
     return (
+<<<<<<< HEAD
+        <div className="bg-gray-100 p-12 mt-16">
+=======
         <div className="bg-gray-100  mt-6">
+>>>>>>> 685b6cd80265b54c40549cae7e6de678187d5c93
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="lg:text-center">
                     <h1 className="text-3xl text-[#00446B] font-bold lg:text-6xl leading-8 tracking-wide uppercase mt-8 sm:mt-28">Contact Us</h1>
