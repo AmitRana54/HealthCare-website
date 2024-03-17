@@ -1,13 +1,14 @@
-.animate {
-  animation: silde 2s ease-in-out infinite direction fill-mode;
-  animation: slide 3s linear 1s infinite alternate forwards;
-  background-color: blue;
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/Roboto.zip);
 }
-@keyframes slide {
-  to {
-    transform: translateX(0%);
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
   }
-  from {
-    transform: translateX(100%);
-  }
-}
+  
+

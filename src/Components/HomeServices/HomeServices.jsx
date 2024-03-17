@@ -21,24 +21,24 @@ function HomeServices() {
 
   return (
     <div className="md:w-1/2 lg:w-full sm:w-[96vw]  m-auto px-4 mb-8">
-       <h1 className="relative lg:text-4xl text-2xl mb-3 text-blue-900 text-center font-bold">
+       <h1 className="relative lg:text-4xl text-2xl mb-3 text-[#00446B] text-center font-bold">
       Home Services We Provide
     </h1>
-      <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="bg-gray-200 rounded-lg shadow-lg overflow-hidden">
         <img
           src={service[index].image}
           alt={service[index].title}
-          className="w-full h-64 object-cover"
+          className="w-full h-72 object-cover"
         />
         <div className="p-6">
-          <h3 className="text-xl font-semibold mb-2">{service[index].title}</h3>
-          <p className={`text-gray-700 ${isExpanded ? '' : 'line-clamp-3'}`}>
+          <h3 className="text-xl text text-black font-semibold mb-2">{service[index].title}</h3>
+          <p className={`text-zinc-800 ${isExpanded ? '' : 'line-clamp-3'}`}>
             {service[index].description}
           </p>
           {service[index].description.length  && (
             <button
               onClick={toggleExpanded}
-              className="text-blue-500 font-semibold mt-2 focus:outline-none"
+              className="text-[#00446B] font-semibold mt-2 focus:outline-none"
             >
               {isExpanded ? 'Read Less' : 'Read More'}
             </button>

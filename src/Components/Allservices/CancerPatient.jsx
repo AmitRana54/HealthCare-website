@@ -8,10 +8,10 @@ function CancerPatient() {
   return (
     <>
       <TemplateServices
-        imgLink={data[0].ImgLink}
-        serviceName={data[0].Name}
-        aboutService={data[0].infoServ}
-        need={data[0].need}
+        imgLink={data[5].ImgLink}
+        serviceName={data[5].Name}
+        aboutService={data[5].infoServ}
+        need={data[5].need}
       />
     </>
   );

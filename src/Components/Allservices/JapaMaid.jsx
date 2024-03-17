@@ -9,10 +9,10 @@ function JapaMaid() {
   return (
     <>
       <TemplateServices
-        imgLink={data[0].ImgLink}
-        serviceName={data[0].Name}
-        aboutService={data[0].infoServ}
-        need={data[0].need}
+        imgLink={data[4].ImgLink}
+        serviceName={data[4].Name}
+        aboutService={data[4].infoServ}
+        need={data[4].need}
       />
     </>
   );
