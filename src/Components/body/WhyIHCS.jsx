@@ -5,7 +5,7 @@ function WhyIHCS() {
     
      <div className="max-w-7xl mt-9  lg:mt-32 px-4 py-8">
       <h1 className="text-center text-[1.3rem] font-bold mb-2 mt-2 lg:text-4xl lg:mt-20 text-[#00446B] ">  Why Indian Health Care Services</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+      <div className="grid  grid-cols-1 px-10 grid-rows-1 lg:grid-cols-3  mt-8">
         <div className="bg-white shadow-md rounded-lg p-6">
           <img src="https://medicrov.com/wp-content/uploads/2024/01/Physical-therapy-exercise-bro.svg" alt="" className="mx-auto h-24 w-24 mb-4" />
           <h2 className="text-center text-xl text-[#00446B] font-bold mb-2">Trained and Verified Nurses & Attendants</h2>
@@ -16,7 +16,7 @@ function WhyIHCS() {
             <li>Medical Interview</li>
           </ul>
         </div>
-        <div className="bg-white shadow-md rounded-lg p-6">
+        <div className="bg-white shadow-md rounded-lg px-10">
           <img src="https://medicrov.com/wp-content/uploads/2024/01/Health-professional-team-bro.svg" alt="" className="mx-auto h-24 w-24 mb-4" />
           <h2 className="text-center text-xl text-[#00446B] font-bold mb-2">Coordinated Care Giving & Management</h2>
           <ul className="text-base text-gray-800 list-disc pl-4">
