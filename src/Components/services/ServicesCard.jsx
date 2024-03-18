@@ -7,7 +7,7 @@ function ServicesCard({ name, image, miniDiscrip, route }) {
       <img
         src={image}
         alt="services image"
-        className="h-[200px] md:h-[250px] w-full rounded-t-md object-cover"
+        className="h-[200px] md:h-[250px] w-full rounded-t-md object-center object-cover"
       />
       <div className="p-4">
         <h1 className="inline-flex items-center underline underline-offset-2 hover:text-[#0D857B] text-lg font-semibold">
