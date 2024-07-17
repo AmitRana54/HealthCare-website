@@ -246,7 +246,7 @@ function BookNow() {
                 value={formData.city}
                 onChange={handleChange}
               >
-                <option value="Saharanpur">Sharanpur</option>
+                
                 <option value="Rishikesh">Rishikesh</option>
               </select>
             </div>

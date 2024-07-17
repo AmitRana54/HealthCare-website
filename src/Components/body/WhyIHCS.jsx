@@ -10,7 +10,7 @@ function WhyIHCS() {
       <div className="grid grid-cols-1  lg:grid-rows-1 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded-lg p-6">
           <img
-            src="https://medicrov.com/wp-content/uploads/2024/01/Physical-therapy-exercise-bro.svg"
+            src="https://images.pexels.com/photos/6129494/pexels-photo-6129494.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="mx-auto h-24 w-24 mb-4"
           />
@@ -26,7 +26,7 @@ function WhyIHCS() {
         </div>
         <div className="bg-white shadow-md rounded-lg p-6">
           <img
-            src="https://medicrov.com/wp-content/uploads/2024/01/Health-professional-team-bro.svg"
+            src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="mx-auto h-24 w-24 mb-4"
           />
@@ -42,7 +42,7 @@ function WhyIHCS() {
         </div>
         <div className="bg-white shadow-md rounded-lg p-6">
           <img
-            src="https://medicrov.com/wp-content/uploads/2024/01/Service-24_7-pana.svg"
+            src="https://images.pexels.com/photos/7551686/pexels-photo-7551686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt=""
             className="mx-auto h-24 w-24 mb-4"
           />

@@ -21,7 +21,7 @@ const CardContext = createContext({
             route:"/attendant"
 
         }, {
-            service: "physiotherapist",
+            service: "Physiotherapist",
             img: "https://images.pexels.com/photos/5794059/pexels-photo-5794059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             miniDiscrip: "Professional physiotherapist service offers tailored treatments to improve mobility, alleviate pain, and enhance overall physical well-being effectively",
             route: "/physiotherapist"

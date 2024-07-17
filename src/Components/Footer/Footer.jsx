@@ -8,9 +8,12 @@ export default function () {
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
           <h3 className="text-xl font-bold sm:text-left mb-4 md:text-left lg:text-3xl">Our Team</h3>
           <ul className="text-orange-500  text-xl">
-            <li>Deeapak Singh</li>
-            <li>Adarsh Singh</li>
+            <li> Rahul Negi</li>
             <li>Ayush Rawat</li>
+            <li>Jatin Singh Badoni</li>
+            <li>Navjot Singh Sidhu</li>
+            <li>Akash Chopda</li>
+            
           </ul>
         </div>
         <div className="w-full sm:w-1/2 md:w-1/4 lg:w-1/3 mb-4">
